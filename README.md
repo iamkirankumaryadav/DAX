@@ -40,7 +40,7 @@ Amount = SUM (
            <tr><td>Concatenate Strings</td><td>&</td></tr>
            <tr><td>AND</td><td>&&</td></tr>
            <tr><td>OR</td><td>||</td></tr>
-           <tr><td>Creates OR Condition for Multiple Options</td><td>IN</td></tr>
+           <tr><td>OR with Multiple Values</td><td>IN</td></tr>
 </table>
                                  </td>
            </tr>
