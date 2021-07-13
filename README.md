@@ -45,11 +45,11 @@ Amount = SUM (
                       </td>
                       <td>
                                  <table>
-                                            <tr><th colspan=3>String or Logical Operator</th></tr>
-                                            <tr><td>Concatenate</td><td>&</td><td>[City] & " " & [State]</td</tr>
-                                            <tr><td>AND</td><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td</tr>
-                                            <tr><td>OR</td><td>||</td><td>[State] = "MH" || [Country] = "IND"</td</tr>
-                                            <tr><td>Multiple OR</td><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td</tr>
+                                            <tr><th colspan=2>String or Logical Operator</th></tr>
+                                            <tr><td>&</td><td>[City] & " " & [State]</td</tr>
+                                            <tr><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td</tr>
+                                            <tr><td>||</td><td>[State] = "MH" || [Country] = "IND"</td</tr>
+                                            <tr><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td</tr>
                                  </table>
                       </td>
            </tr>         
