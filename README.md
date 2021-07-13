@@ -44,10 +44,10 @@ Amount = SUM (
                       <td>
                                  <table>
                                             <tr><th colspan=3>String or Logical Operator</th></tr>
-                                            <tr><td>Concatenate Strings</td><td>&</td><td>[City] & " " & [State]</td</tr>
+                                            <tr><td>Concatenate</td><td>&</td><td>[City] & " " & [State]</td</tr>
                                             <tr><td>AND</td><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td</tr>
                                             <tr><td>OR</td><td>||</td><td>[State] = "MH" || [Country] = "IND"</td</tr>
-                                            <tr><td>OR with Multiple Values</td><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td</tr>
+                                            <tr><td>Multiple OR</td><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td</tr>
                                  </table>
                       </td>
            </tr>         
