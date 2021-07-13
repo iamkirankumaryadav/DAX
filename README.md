@@ -15,4 +15,8 @@ Amount = SUM (
 <table>
            <tr><th colspan=2>Arithmetic Operator</th></tr>
            <tr><td>Addition</td><td>+</td></tr>
+           <tr><td>Subtraction</td><td>-</td></tr>
+           <tr><td>Multiplication</td><td>*</td></tr>
+           <tr><td>Division</td><td>/</td></tr>
+           <tr><td>Exponent</td><td>^</td></tr>
 </table>
