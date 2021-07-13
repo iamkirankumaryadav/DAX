@@ -13,7 +13,7 @@ Amount = SUM (
 ### DAX Operators
 
 <table>
-           <tr><th>Operators</th></tr>
+           <tr><th colspan=2>Operators</th></tr>
            <tr>
                       <td>
 <table>
