@@ -11,7 +11,7 @@ Amount = SUM (
 ```
 
 <table align=center>
-           <tr><th colspan=2><h3>DAX Operators</h3></th></tr>
+           <tr><th colspan=3><h3>DAX Operators</h3></th></tr>
            <tr>
                       <td>
 <table>
