@@ -24,12 +24,12 @@ Amount = SUM (
            <tr>
                       <td>
                                  <table>
-                                            <tr><th colspan=3>Arithmetic Operator</th></tr>
-                                            <tr><td>Addition</td><td>+</td><td>1 + 3</td></tr>
-                                            <tr><td>Subtraction</td><td>-</td><td>7 - 3</td></tr>
-                                            <tr><td>Multiplication</td><td>*</td><td>5 * 3</td></tr>
-                                            <tr><td>Division</td><td>/</td><td>10 / 5</td></tr>
-                                            <tr><td>Exponent</td><td>^</td><td>5 ^ 2</td></tr>
+                                            <tr><th colspan=2>Arithmetic Operator</th></tr>
+                                            <tr><td>Addition</td><td>+</td></tr>
+                                            <tr><td>Subtraction</td><td>-</td></tr>
+                                            <tr><td>Multiplication</td><td>*</td></tr>
+                                            <tr><td>Division</td><td>/</td><</tr>
+                                            <tr><td>Exponent</td><td>^</td></tr>
                                  </table>
                       </td>
                       <td>
