@@ -1,7 +1,7 @@
 # DAX
 Data Analysis Expressions
 
-`DAX` is a functional language, the execution flows with function calls
+`DAX` is a functional language, the execution flows with function calls.
 
 ```DAX
 Amount = SUM (
