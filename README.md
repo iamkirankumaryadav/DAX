@@ -24,6 +24,7 @@ Amount = SUM (
            <tr><td>Division</td><td>/</td></tr>
            <tr><td>Exponent</td><td>^</td></tr>
 </table>
+                                 </td>
            </tr>
-           </td>
+           
 </table>
