@@ -10,5 +10,5 @@ Amount = SUM (
               'Date'[Year] < 2005
            ),
            IF ( 'Date'[Year] >= 2000, [Sales Amount] * 100, [Sales Amount] * 90 )
-        )
+         )
 ```
