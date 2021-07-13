@@ -25,12 +25,13 @@ Amount = SUM (
                                  </td>
                        <td>
 <table>
-           <tr><th colspan=2>Arithmetic Operator</th></tr>
-           <tr><td>Addition</td><td>+</td></tr>
-           <tr><td>Subtraction</td><td>-</td></tr>
-           <tr><td>Multiplication</td><td>*</td></tr>
-           <tr><td>Division</td><td>/</td></tr>
-           <tr><td>Exponent</td><td>^</td></tr>
+           <tr><th colspan=2>Comparison Operator</th></tr>
+           <tr><td>Equal to</td><td>=</td></tr>
+           <tr><td>Greater than</td><td>></td></tr>
+           <tr><td>Less than</td><td><</td></tr>
+           <tr><td>Greater than or Equal to</td><td>>=</td></tr>
+           <tr><td>Less than or Equal to</td><td><=</td></tr>
+           <tr><td>Not equal to</td><td><></td></tr>
 </table>
                                  </td>
            </tr>
