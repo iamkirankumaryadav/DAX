@@ -18,6 +18,13 @@ Amount = SUM (
 4. `Primary` Key : Uniquely identifies each `Row` of a table, and match `Foreign` keys in related Data tables.
 5. `Cardinality` : The uniqueness of values in the column. 
 
+### Important thing about Data Modeling
+
+1. Use `Star` schema (One to Many) relationship.
+2. Always create a relationship with `one way` filters.
+3. Only include the data you need for analysis.
+4. Split out individual `Date` and `Time` components from `DateTime` field.
+5. `Disable` the refreshing of Data if that do not need refresh everytime from the Power Query Editor.
 
 <table align=center>
            <tr><th colspan=3><h3>DAX Operators</h3></th></tr>
