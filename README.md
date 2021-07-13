@@ -10,6 +10,11 @@ Amount = SUM (
          )
 ```
 
+### Important Terms
+
+1. Data Table or `Fact` Table : Contains measurable values (cost, quantity)
+2. Lookup or `Dimension` Table : 
+
 <table align=center>
            <tr><th colspan=3><h3>DAX Operators</h3></th></tr>
            <tr>
