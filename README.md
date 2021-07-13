@@ -18,7 +18,7 @@ Amount = SUM (
 4. `Primary` Key : Uniquely identifies each `Row` of a table, and match `Foreign` keys in related Data tables.
 5. `Cardinality` : The uniqueness of values in the column. 
 
-### Important thing about Data Modeling
+### Important points about Data Modeling
 
 1. Use `Star` schema (One to Many) relationship.
 2. Always create a relationship with `one way` filters.
