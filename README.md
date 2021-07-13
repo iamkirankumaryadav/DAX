@@ -25,18 +25,18 @@ Amount = SUM (
                       </td>
                       <td>
                                  <table>
-                                            <tr><th colspan=2>Comparison Operator</th></tr>
-                                            <tr><td>Equal to</td><td>=</td></tr>
-                                            <tr><td>Greater than</td><td>></td></tr>
-                                            <tr><td>Less than</td><td><</td></tr>
-                                            <tr><td>Greater than or Equal to</td><td>>=</td></tr>
-                                            <tr><td>Less than or Equal to</td><td><=</td></tr>
-                                            <tr><td>Not equal to</td><td><></td></tr>
+                                            <tr><th colspan=3>Comparison Operator</th></tr>
+                                            <tr><td>Equal to</td><td>=</td><td>[City] = 'Mumbai'</td></tr>
+                                            <tr><td>Greater than</td><td>></td><td>[Age] > 18</td></tr>
+                                            <tr><td>Less than</td><td><</td><td>[Age] < 18</td></tr>
+                                            <tr><td>Greater than or Equal to</td><td>>=</td><td>[Age] >= 18</td></tr>
+                                            <tr><td>Less than or Equal to</td><td><=</td><td>[Age] <= 18</td></tr>
+                                            <tr><td>Not equal to</td><td><></td><td>[City] <> "Mumbai"</td></tr>
                                  </table>
                       </td>
                       <td>
                                  <table>
-                                            <tr><th colspan=2>String or Logical Operator</th></tr>
+                                            <tr><th colspan=3>String or Logical Operator</th></tr>
                                             <tr><td>Concatenate Strings</td><td>&</td></tr>
                                             <tr><td>AND</td><td>&&</td></tr>
                                             <tr><td>OR</td><td>||</td></tr>
