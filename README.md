@@ -9,3 +9,10 @@ Amount = SUM (
            IF ( 'Date'[Year] >= 2000, [Sales Amount] * 100, [Sales Amount] * 90 )
          )
 ```
+
+### DAX Operators
+
+<table>
+           <tr><th colspan=2>Arithmetic Operator</th></tr>
+           <tr><td>Addition</td><td>+</td></tr>
+</table>
