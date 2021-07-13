@@ -16,6 +16,8 @@ Amount = SUM (
 2. Lookup or `Dimension` Table : Provides descriptive attributes about each dimension.
 3. `Foreign` Key : Contains multiple instances of each value, and are used to match the `Primary` keys in related Lookup tables.
 4. `Primary` Key : Uniquely identifies each `Row` of a table, and match `Foreign` keys in related Data tables.
+5. `Cardinality` : The uniqueness of values in the column. 
+
 
 <table align=center>
            <tr><th colspan=3><h3>DAX Operators</h3></th></tr>
