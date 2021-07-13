@@ -1,5 +1,5 @@
 # DAX
-Data Analysis Expressions | [DAX Guide](https://dax.guide/)
+Data Analysis Expressions | [SQLBI](https://www.sqlbi.com/) | [DAX Guide](https://dax.guide/) | [DAX Formatter](https://www.daxformatter.com/) | [DAX Do](https://dax.do/) | [DAX Patterns](https://www.daxpatterns.com/)
 
 `DAX` is a functional language, the execution flows with function calls.
 
