@@ -10,7 +10,7 @@ Amount = SUM (
          )
 ```
 
-<table>
+<table align=center>
            <tr><th colspan=2><h3>DAX Operators</h3></th></tr>
            <tr>
                       <td>
@@ -32,6 +32,15 @@ Amount = SUM (
            <tr><td>Greater than or Equal to</td><td>>=</td></tr>
            <tr><td>Less than or Equal to</td><td><=</td></tr>
            <tr><td>Not equal to</td><td><></td></tr>
+</table>
+                                 </td>
+                       <td>
+<table>
+           <tr><th colspan=2>String or Logical Operator</th></tr>
+           <tr><td>Concatenate Strings</td><td>&</td></tr>
+           <tr><td>AND</td><td>&&</td></tr>
+           <tr><td>OR</td><td>||</td></tr>
+           <tr><td>Creates OR Condition for Multiple Options</td><td>IN</td></tr>
 </table>
                                  </td>
            </tr>
