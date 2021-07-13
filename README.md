@@ -15,6 +15,7 @@ Amount = SUM (
 <table>
            <tr><th>Operators</th></tr>
            <tr>
+                      <td>
 <table>
            <tr><th colspan=2>Arithmetic Operator</th></tr>
            <tr><td>Addition</td><td>+</td></tr>
@@ -24,4 +25,5 @@ Amount = SUM (
            <tr><td>Exponent</td><td>^</td></tr>
 </table>
            </tr>
+           </td>
 </table>
