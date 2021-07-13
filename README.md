@@ -37,10 +37,10 @@ Amount = SUM (
                       <td>
                                  <table>
                                             <tr><th colspan=3>String or Logical Operator</th></tr>
-                                            <tr><td>Concatenate Strings</td><td>&</td></tr>
-                                            <tr><td>AND</td><td>&&</td></tr>
-                                            <tr><td>OR</td><td>||</td></tr>
-                                            <tr><td>OR with Multiple Values</td><td>IN</td></tr>
+                                            <tr><td>Concatenate Strings</td><td>&</td><td>[City] & " " & [State]</td</tr>
+                                            <tr><td>AND</td><td>&&</td><td>[City] = 'Mumbai'</td</tr>
+                                            <tr><td>OR</td><td>||</td><td>[City] = 'Mumbai'</td</tr>
+                                            <tr><td>OR with Multiple Values</td><td>IN</td><td>[City] = 'Mumbai'</td</tr>
                                  </table>
                       </td>
            </tr>         
