@@ -63,3 +63,16 @@ Amount = SUM (
 </table>
                                                        
                                                   
+### Important Functions 
+
+### 1. CALCULATE
+- `Evaluate` a given expression or formula under a set of defined `filters`.
+
+```DAX
+= CALCULATE (
+           Expression, 
+           Filter1,
+           Filter2,
+           ...
+  )
+```
