@@ -71,4 +71,7 @@ Amount = SUM (
 ```DAX
 =
 CALCULATE ( Expression, Filter1, Filter2 )
+
+# Expression : An existing Measure or a DAX Formula for a valid measure.
+# Filter     : Filter Expressions ([Country] = "India")
 ```
