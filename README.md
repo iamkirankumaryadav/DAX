@@ -73,5 +73,5 @@ Amount = SUM (
 CALCULATE ( Expression, Filter1, Filter2 )
 
 # Expression : An existing Measure or a DAX Formula for a valid measure.
-# Filter     : Filter Expressions ([Country] = "India")
+# Filter     : Filter Expressions (Asia[Country] = "India") or (Student[Age] > 18)
 ```
