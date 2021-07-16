@@ -63,3 +63,23 @@ Amount = SUM (
 </table>
                                                        
                                                      
+<table>
+           <tr><th colspan=2>Maths and Statistical Functions</th></tr>
+           <tr><th colspan=2>Aggregate Functions as well as Iterators evaluated at <b>Row</b> level</th></tr>
+           <tr><td>SUM</td><td></td></tr>
+           <tr><td>AVERAGE</td><td></td></tr>
+           <tr><td>MAX</td><td></td></tr>
+           <tr><td>MIN</td><td></td></tr>
+           <tr><td>DIVIDE</td><td></td></tr>
+           <tr><td>COUNT</td><td></td></tr>
+           <tr><td>COUNTA</td><td></td></tr>
+           <tr><td>COUNTROWS</td><td></td></tr>
+           <tr><td>DISTINCTCOUNT</td><td></td></tr>
+           <tr><th colspan=2>Iterators Functions</th></tr>
+           <tr><td>SUMX</td><td></td></tr>
+           <tr><td>AVERAGEX</td><td></td></tr>
+           <tr><td>MAXX</td><td></td></tr>
+           <tr><td>MINX</td><td></td></tr>
+           <tr><td>RANKX</td><td></td></tr>
+           <tr><td>COUNTX</td><td></td></tr>
+</table>
