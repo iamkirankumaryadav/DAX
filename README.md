@@ -62,39 +62,4 @@ Amount = SUM (
            </tr>         
 </table>
                                                        
-                                                       
-<table align=center>
-           <tr><th colspan=5><h3>DAX Functions</h3></th></tr>
-           <tr>
-                      <td>
-                                 <table>
-                                            <tr><th>Math and Statistics</th></tr>
-                                            <tr><td>SUM</td></tr>
-                                            <tr><td>Subtraction</td></tr>
-                                            <tr><td>Multiplication</td></tr>
-                                            <tr><td>Division</td></tr>
-                                            <tr><td>Exponent</td></tr>
-                                 </table>
-                      </td>
-                      <td>
-                                 <table>
-                                            <tr><th>Logical</th></tr>
-                                            <tr><td>Equal to</td></tr>
-                                            <tr><td>Greater than</td></tr>
-                                            <tr><td>Less than</td></tr>
-                                            <tr><td>Greater than or Equal to</td></tr>
-                                            <tr><td>Less than or Equal to</td></tr>
-                                            <tr><td>Not equal to</td></tr>
-                                 </table>
-                      </td>
-                      <td>
-                                 <table>
-                                            <tr><th>Text</th></tr>
-                                            <tr><td>&</td></tr>
-                                            <tr><td>&&</td></tr>
-                                            <tr><td>||</td></tr>
-                                            <tr><td>IN</td></tr>
-                                 </table>
-                      </td>
-           </tr>         
-</table>                                                    
+                                                     
