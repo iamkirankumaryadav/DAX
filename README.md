@@ -30,9 +30,9 @@ IF(Logical, Return IF True, Return IF False)
 
 ```DAX
 = SUMX (
-      FILTER (
-            RELATED ( )
-      )
+       FILTER (
+              RELATED ( )
+       )
   )
 ```
 
