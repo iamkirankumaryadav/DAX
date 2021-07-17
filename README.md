@@ -119,13 +119,3 @@ CALCULATE ( Expression, Filter1, Filter2 )
 # Expression : An existing Measure or a DAX Formula for a valid measure.
 # Filter     : Filter Expressions (Asia[Country] = "India") or (Student[Age] > 18)
 ```
-
-### Time Intelligence Functions
-
-### 1. Performance to Date
-
-`DATESYTD` : Year to Date 
-
-`DATESQTD` : Quarter to Date
-
-`DATESMTD` : Month to Date
