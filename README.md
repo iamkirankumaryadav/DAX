@@ -20,13 +20,13 @@ Amount = SUM (
 
 ### Evaluation Order 
 
-1. `Individual` functions : Left to Right 
+1. `Individual` functions : Left to Right ( Startting from first parameter and following the order )
 
 ```DAX
 IF(Logical, Return IF True, Return IF False)
 ```
 
-2. `Nested` functions     : Inside Out (Start from innermost function and work outward)
+2. `Nested` functions     : Inside Out ( Start from innermost function and work outward )
 
 ```DAX
 = SUMX (
