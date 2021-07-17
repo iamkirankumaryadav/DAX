@@ -79,6 +79,32 @@ IF(Logical, Return IF True, Return IF False)
                       </td>
            </tr>         
 </table>
+
+### Error Handling
+
+Helps us to identify `missing` data. ( Quality assurance and testing )
+
+1. `IFERROR()` : IFERROR(Value, ValueIfError) 
+
+```DAX
+Error Check = 
+IFERROR (
+        1/0,
+        BLANK()
+)        
+```
+
+2. `ISBLANK()` : ISBLANK(Value)
+
+```DAX
+IF (
+   ISBLANK (
+           [Sales (Last Year)]
+   ),
+   "No Sales",
+   [Sales (Last Year)]
+)
+```
                                                        
                                                   
 ### Important Functions 
