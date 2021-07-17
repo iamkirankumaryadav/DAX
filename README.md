@@ -18,6 +18,24 @@ Amount = SUM (
 4. `Primary` Key : Uniquely identifies each `Row` of a table, and match `Foreign` keys in related Data tables.
 5. `Cardinality` : The uniqueness of values in the column. 
 
+### Evaluation Order 
+
+1. `Individual` functions : Left to Right 
+
+```DAX
+IF(Logical, Return IF True, Return IF False)
+```
+
+2. `Nested` functions     : Inside Out (Start from innermost function and work outward)
+
+```DAX
+= SUMX (
+      FILTER (
+            RELATED ( )
+      )
+  )
+```
+
 ### Important points about Data Modeling
 
 1. Use `Star` schema (One to Many) relationship.
