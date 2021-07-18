@@ -112,7 +112,7 @@ CALCULATE ( Expression, Filter1, Filter2 )
 
 ### Table and Filter Functions
 
-- Filter `Tables` or filter results of `Measures`
+Filter `Tables` or filter results of `Measures`
 
 <table>
            <tr><th>Filter Data</th></tr>
@@ -122,4 +122,23 @@ CALCULATE ( Expression, Filter1, Filter2 )
            <tr><td>VALUES</td></tr>
            <tr><td>ALLEXCEPT</td></tr>
            <tr><td>ALLSELECTED</td></tr>
+</table>
+
+Specify or add `Columns` based on existing data.
+
+<table>
+           <tr><th>Add Data</th></tr>
+           <tr><td>SELECTCOLUMNS</td></tr>
+           <tr><td>ADDCOLUMNS</td></tr>
+           <tr><td>SUMMARIZE</td></tr>           
+</table>
+
+Generate new `Rows`, `Columns` and `Tables` from scratch.
+
+<table>
+           <tr><th>Create Data</th></tr>
+           <tr><td>ROW</td></tr>
+           <tr><td>DATATABLE</td></tr>
+           <tr><td>GENERATESERIES</td></tr>  
+           <tr><td>{} Table Constructor</td></tr>  
 </table>
