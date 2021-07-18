@@ -141,5 +141,5 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
            <tr><td>ROW</td><td>Returns a single row table with new specified columns.</td></tr>
            <tr><td>DATATABLE</td><td>Returns a new static data.</td></tr>
            <tr><td>GENERATESERIES</td><td>Returns a single column table containing sequential values.</td></tr>  
-           <tr><td>{ } Table Constructor</td></tr>  
+           <tr><td>{ } Table Constructor</td><td>Returns a table containing columns and rows.</td></tr>  
 </table>
