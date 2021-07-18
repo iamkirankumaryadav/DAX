@@ -141,5 +141,5 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
            <tr><td>ROW</td></tr>
            <tr><td>DATATABLE</td></tr>
            <tr><td>GENERATESERIES</td></tr>  
-           <tr><td>{} Table Constructor</td></tr>  
+           <tr><td>{ } Table Constructor</td></tr>  
 </table>
