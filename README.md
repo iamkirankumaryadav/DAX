@@ -120,7 +120,8 @@ Filter `Tables` or filter results of `Measures`
            <tr><td>FILTER</td><td>Returns a filtered table based on one or more filtered expressions.</td></tr>
            <tr><td>DISTINCT</td><td>Returns a single column table of unique values</td></tr>
            <tr><td>VALUES</td><td>Returns a single column of unique values when a column name is passed. if a table is passed, VALUE returns the entire table including duplicates and blank rows.</td></tr>
-           <tr><td>ALLEXCEPT</td><td></td></tr>
+           <tr><td>SELECTEDVALUE</td><td>Returns a value when there is only one value in a specified column.</td></tr>
+           <tr><td>ALLEXCEPT</td><td>Removes all context filters in a table except the filter is applied to the specified columns.</td></tr>
            <tr><td>ALLSELECTED</td><td></td></tr>
 </table>
 
