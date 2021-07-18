@@ -143,3 +143,13 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
            <tr><td>GENERATESERIES</td><td>Returns a single column table containing sequential values.</td></tr>  
            <tr><td>{ } Table Constructor</td><td>Returns a table containing columns and rows.</td></tr>  
 </table>
+
+<table>
+           <tr><th colspan=2>Calculated Table Joins</th></tr>
+           <tr><td>CROSSJOIN</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
+           <tr><td>UNION</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
+           <tr><td>EXCEPT</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
+           <tr><td>INTERSECT</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
+</table>
+
+`Cartesian` Product : Resulting table contains `m` * `n` rows and `m` + `n` columns.
