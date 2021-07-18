@@ -131,7 +131,7 @@ Specify or add `Columns` based on existing data.
            <tr><th colspan=2>Add Data</th></tr>
            <tr><td>SELECTCOLUMNS</td><td></td></tr>
            <tr><td>ADDCOLUMNS</td><td></td></tr>
-           <tr><td>SUMMARIZE</td>Create a summary of table grouped by specified columns<td></td></tr>           
+           <tr><td>SUMMARIZE</td><td>Create a summary of table grouped by specified columns</td></tr>           
 </table>
 
 Generate new `Rows`, `Columns` and `Tables` from scratch.
