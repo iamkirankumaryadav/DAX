@@ -149,7 +149,7 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
            <tr><td>CROSSJOIN</td><td>Caretsian product of two tables ( All possible combinations )</td></tr>
            <tr><td>UNION</td><td>Stacks two table together ( Vertically )</td></tr>
            <tr><td>EXCEPT</td><td>Returns all rows from left table which do not appear in right table.</td></tr>
-           <tr><td>INTERSECT</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
+           <tr><td>INTERSECT</td><td>Returns all rows from left table which also appears in right table.</td></tr>
 </table>
 
 `Cartesian`  
@@ -168,3 +168,12 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 - Columns are combined by `position`
 - Column names are determined by `left` table.
 - Relations cannot be created with 3rd table.
+- Useful in the case to find employee and customer `churning`
+
+`Intersect`
+- All tables must contain same number of `columns`
+- Accepts only 2 Tables.
+- Columns are combined by `position`
+- Column names are determined by `left` table.
+- Relations cannot be created with 3rd table.
+- Useful in the case to find active customer, repeat purchases and new employee or new customers in recent period.
