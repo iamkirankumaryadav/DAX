@@ -44,48 +44,31 @@ IF(Logical, Return IF True, Return IF False)
 4. Split out individual `Date` and `Time` components from `DateTime` field.
 5. `Disable` the refreshing of Data if that do not need refresh everytime from the Power Query Editor.
 
-<table>
-        
+<table>        
            <tr><th colspan=2>Arithmetic Operator</th></tr>
-        
            <tr><td>Addition</td><td>+</td></tr>
-        
            <tr><td>Subtraction</td><td>-</td></tr>
-        
            <tr><td>Multiplication</td><td>*</td></tr>
-        
            <tr><td>Division</td><td>/</td></tr>
-        
            <tr><td>Exponent</td><td>^</td></tr>
 </table>
 
-<table align=center>
-           <tr><th colspan=3><h3>DAX Operators</h3></th></tr>
-           <tr>
-                      <td>
-                                 
-                      </td>
-                      <td>
-                                 <table>
-                                            <tr><th colspan=3>Comparison Operator</th></tr>
-                                            <tr><td>Equal to</td><td>=</td><td>[City] = 'Mumbai'</td></tr>
-                                            <tr><td>Greater than</td><td>></td><td>[Age] > 18</td></tr>
-                                            <tr><td>Less than</td><td><</td><td>[Age] < 18</td></tr>
-                                            <tr><td>Greater than or Equal to</td><td>>=</td><td>[Age] >= 18</td></tr>
-                                            <tr><td>Less than or Equal to</td><td><=</td><td>[Age] <= 18</td></tr>
-                                            <tr><td>Not equal to</td><td><></td><td>[City] <> "Mumbai"</td></tr>
-                                 </table>
-                      </td>
-                      <td>
-                                 <table>
-                                            <tr><th colspan=2>String or Logical Operator</th></tr>
-                                            <tr><td>&</td><td>[City] & " " & [State]</td></tr>
-                                            <tr><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td></tr>
-                                            <tr><td>||</td><td>[State] = "MH" || [Country] = "IND"</td></tr>
-                                            <tr><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td></tr>
-                                 </table>
-                      </td>
-           </tr>         
+<table>
+        <tr><th colspan=3>Comparison Operator</th></tr>
+        <tr><td>Equal to</td><td>=</td><td>[City] = 'Mumbai'</td></tr>
+        <tr><td>Greater than</td><td>></td><td>[Age] > 18</td></tr>
+        <tr><td>Less than</td><td><</td><td>[Age] < 18</td></tr>
+        <tr><td>Greater than or Equal to</td><td>>=</td><td>[Age] >= 18</td></tr>
+        <tr><td>Less than or Equal to</td><td><=</td><td>[Age] <= 18</td></tr>
+        <tr><td>Not equal to</td><td><></td><td>[City] <> "Mumbai"</td></tr>
+</table>
+
+<table>
+       <tr><th colspan=2>String or Logical Operator</th></tr>
+       <tr><td>&</td><td>[City] & " " & [State]</td></tr>
+       <tr><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td></tr>
+       <tr><td>||</td><td>[State] = "MH" || [Country] = "IND"</td></tr>
+       <tr><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td></tr>
 </table>
 
 ### Error Handling
