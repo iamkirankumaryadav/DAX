@@ -156,3 +156,9 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 - Resulting table contains `m` * `n` rows 
 - Resulting table contains `m` + `n` columns.
 - Column names should be `different` in all the columns.
+
+`Union`
+- All tables must contain same number of `columns`
+- Columns are combined by `position`
+- Column names are determined by `first` table.
+- Union creates `Duplicate` rows.
