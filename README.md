@@ -162,3 +162,9 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 - Columns are combined by `position`
 - Column names are determined by `first` table.
 - Union creates `Duplicate` rows.
+
+`Except`
+- All tables must contain same number of `columns`
+- Columns are combined by `position`
+- Column names are determined by `left` table.
+- Relations cannot be created with 3rd table.
