@@ -172,8 +172,9 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 
 `Intersect`
 - All tables must contain same number of `columns`
-- Accepts only 2 Tables.
-- Columns are combined by `position`
+- Accepts only `2` Tables.
+- Result of INTERSECT(T1,T2) will be different from INTERSECT(T2,T1)
+- Union creates `Duplicate` rows.
 - Column names are determined by `left` table.
 - Relations cannot be created with 3rd table.
 - Useful in the case to find active customer, repeat purchases and new employee or new customers in recent period.
