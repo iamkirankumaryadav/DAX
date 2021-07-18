@@ -112,6 +112,8 @@ CALCULATE ( Expression, Filter1, Filter2 )
 
 ### Table and Filter Functions
 
+- Filter `Tables` or filter results of `Measures`
+
 <table>
            <tr><th>Filter Data</th></tr>
            <tr><td>ALL</td></tr>
