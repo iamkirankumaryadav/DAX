@@ -96,8 +96,7 @@ IF (
    [Sales (Last Year)]
 )
 ```
-                                                       
-                                                  
+                                                                                                         
 ### Important Functions 
 
 ### 1. CALCULATE
@@ -110,3 +109,15 @@ CALCULATE ( Expression, Filter1, Filter2 )
 # Expression : An existing Measure or a DAX Formula for a valid measure.
 # Filter     : Filter Expressions (Asia[Country] = "India") or (Student[Age] > 18)
 ```
+
+### Table and Filter Functions
+
+<table>
+           <tr><th>Filter Data</th></tr>
+           <tr><td>ALL</td></tr>
+           <tr><td>FILTER</td></tr>
+           <tr><td>DISTINCT</td></tr>
+           <tr><td>VALUES</td></tr>
+           <tr><td>ALLEXCEPT</td></tr>
+           <tr><td>ALLSELECTED</td></tr>
+</table>
