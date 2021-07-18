@@ -149,7 +149,7 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
            <tr><td>CROSSJOIN</td><td>Caretsian product of two tables ( All possible combinations )</td></tr>
            <tr><td>UNION</td><td>Stacks two table together ( Vertically )</td></tr>
            <tr><td>EXCEPT</td><td>Returns all rows from left table which do not appear in right table.</td></tr>
-           <tr><td>INTERSECT</td><td>Returns all rows from left table which also appears in right table.</td></tr>
+           <tr><td>INTERSECT</td><td>Returns all rows from left table which also appears in right table ( Common )</td></tr>
 </table>
 
 `Cartesian`  
