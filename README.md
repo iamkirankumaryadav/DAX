@@ -44,18 +44,26 @@ IF(Logical, Return IF True, Return IF False)
 4. Split out individual `Date` and `Time` components from `DateTime` field.
 5. `Disable` the refreshing of Data if that do not need refresh everytime from the Power Query Editor.
 
+<table>
+        
+           <tr><th colspan=2>Arithmetic Operator</th></tr>
+        
+           <tr><td>Addition</td><td>+</td></tr>
+        
+           <tr><td>Subtraction</td><td>-</td></tr>
+        
+           <tr><td>Multiplication</td><td>*</td></tr>
+        
+           <tr><td>Division</td><td>/</td></tr>
+        
+           <tr><td>Exponent</td><td>^</td></tr>
+</table>
+
 <table align=center>
            <tr><th colspan=3><h3>DAX Operators</h3></th></tr>
            <tr>
                       <td>
-                                 <table>
-                                            <tr><th colspan=2>Arithmetic Operator</th></tr>
-                                            <tr><td>Addition</td><td>+</td></tr>
-                                            <tr><td>Subtraction</td><td>-</td></tr>
-                                            <tr><td>Multiplication</td><td>*</td></tr>
-                                            <tr><td>Division</td><td>/</td></tr>
-                                            <tr><td>Exponent</td><td>^</td></tr>
-                                 </table>
+                                 
                       </td>
                       <td>
                                  <table>
