@@ -118,8 +118,8 @@ Filter `Tables` or filter results of `Measures`
            <tr><th colspan=2>Filter Data</th></tr>
            <tr><td>ALL</td><td>Returns all the rows in a table, or all the values in a column, ignoring any filters.</td></tr>
            <tr><td>FILTER</td><td>Returns a filtered table based on one or more filtered expressions.</td></tr>
-           <tr><td>DISTINCT</td><td></td></tr>
-           <tr><td>VALUES</td><td></td></tr>
+           <tr><td>DISTINCT</td><td>Returns a single column table of unique values</td></tr>
+           <tr><td>VALUES</td><td>Returns a single column of unique values when a column name is passed. if a table is passed, VALUE returns the entire table including duplicates and blank rows.</td></tr>
            <tr><td>ALLEXCEPT</td><td></td></tr>
            <tr><td>ALLSELECTED</td><td></td></tr>
 </table>
