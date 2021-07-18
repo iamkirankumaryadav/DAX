@@ -115,13 +115,13 @@ CALCULATE ( Expression, Filter1, Filter2 )
 Filter `Tables` or filter results of `Measures`
 
 <table>
-           <tr><th>Filter Data</th></tr>
-           <tr><td>ALL</td></tr>
-           <tr><td>FILTER</td></tr>
-           <tr><td>DISTINCT</td></tr>
-           <tr><td>VALUES</td></tr>
-           <tr><td>ALLEXCEPT</td></tr>
-           <tr><td>ALLSELECTED</td></tr>
+           <tr><th colspan=2>Filter Data</th></tr>
+           <tr><td>ALL</td><td>Returns all the rows in a table, or all the values in a column, ignoring any filters.</td></tr>
+           <tr><td>FILTER</td><td>Returns a filtered table based on one or more filtered expressions.</td></tr>
+           <tr><td>DISTINCT</td><td></td></tr>
+           <tr><td>VALUES</td><td></td></tr>
+           <tr><td>ALLEXCEPT</td><td></td></tr>
+           <tr><td>ALLSELECTED</td><td></td></tr>
 </table>
 
 Specify or add `Columns` based on existing data.
