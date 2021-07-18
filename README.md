@@ -148,7 +148,7 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
            <tr><th colspan=2>Calculated Table Joins</th></tr>
            <tr><td>CROSSJOIN</td><td>Caretsian product of two tables ( All possible combinations )</td></tr>
            <tr><td>UNION</td><td>Stacks two table together ( Vertically )</td></tr>
-           <tr><td>EXCEPT</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
+           <tr><td>EXCEPT</td><td>Returns all rows from left tables which do not appear in right table.</td></tr>
            <tr><td>INTERSECT</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
 </table>
 
