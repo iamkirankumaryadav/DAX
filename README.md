@@ -137,9 +137,9 @@ Specify or add `Columns` based on existing data.
 Generate new `Rows`, `Columns` and `Tables` from scratch.
 
 <table>
-           <tr><th>Create Data</th></tr>
-           <tr><td>ROW</td></tr>
-           <tr><td>DATATABLE</td></tr>
-           <tr><td>GENERATESERIES</td></tr>  
+           <tr><th colspan=2>Create Data</th></tr>
+           <tr><td>ROW</td><td>Returns a single row table with new specified columns.</td></tr>
+           <tr><td>DATATABLE</td><td>Returns a new static data.</td></tr>
+           <tr><td>GENERATESERIES</td><td>Returns a single column table containing sequential values.</td></tr>  
            <tr><td>{ } Table Constructor</td></tr>  
 </table>
