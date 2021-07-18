@@ -152,4 +152,7 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
            <tr><td>INTERSECT</td><td>Caretsian product of two tables ( All possible combinations)</td></tr>
 </table>
 
-`Cartesian` Product : Resulting table contains `m` * `n` rows and `m` + `n` columns.
+`Cartesian` Product 
+- Resulting table contains `m` * `n` rows 
+- Resulting table contains `m` + `n` columns.
+- Column names should be `different` in all the columns.
