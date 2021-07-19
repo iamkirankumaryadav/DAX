@@ -92,7 +92,7 @@ CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to 
   <tr><td>COALESCE</td><td>Count of all the values in a column.</td></tr> 
 </table>
 
-`Check` the value or data type of the value and returns `TRUE` or `FALSE`
+`Check` the value or data type of all the value or instances and returns `TRUE` or `FALSE`
 
 <table>
   <tr><th colspan=2>Logical Functions</th></tr>
