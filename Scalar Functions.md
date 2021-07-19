@@ -17,7 +17,7 @@ e.g. `Average` customer age, `Maximum` product profit, `Sum` of revenue, `Count`
 </table>
 
 ```DAX
--- Distinct Count 
+// Better way to count the Distinct Rows.
 
 Total Employee = 
 COUNTROWS (
