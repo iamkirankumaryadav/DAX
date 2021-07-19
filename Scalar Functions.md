@@ -102,6 +102,4 @@ CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to 
   <tr><td>ISNUMBER</td><td>Check whether a value is a number.</td></tr>
   <tr><td>ISNONTEXT</td><td>Check whether a value is not a text.</td></tr>
   <tr><td>ISTEXT</td><td>Check whether a value is text.</td></tr>
-  <tr><td>SWITCH</td><td>Add Multiple Case with conditions.</td></tr> 
-  <tr><td>COALESCE</td><td>Count of all the values in a column.</td></tr> 
 </table>
