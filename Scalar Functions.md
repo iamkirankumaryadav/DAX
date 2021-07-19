@@ -56,15 +56,24 @@ SUMX (
 <table>
   <tr><th colspan=2>Rounding Functions</th></tr>
   <tr><td>INT(Number)</td><td>Round a number to an Integer.</td></tr>
-  <tr><td>ROUND(Number, Digits)</td><td>Round a number to a specific digit.</td></tr>
-  <tr><td>ROUNDUP(Number, Digits)</td><td>Round a number up.</td></tr>
-  <tr><td>ROUNDDOWN(Number, Digits)</td><td>Round a number down.</td></tr>
+  <tr><td>ROUND(Number, Digit)</td><td>Round a number to a specific digit.</td></tr>
+  <tr><td>ROUNDUP(Number, Digit)</td><td>Round a number up.</td></tr>
+  <tr><td>ROUNDDOWN(Number, Digit)</td><td>Round a number down.</td></tr>
   <tr><td>MROUND(Number, Multiple)</td><td>Round a number to desired multiple.</td></tr>
   <tr><td>TRUNC(Number)</td><td>Remove decimals.</td></tr>
   <tr><td>FIXED(Number)</td><td>Round a number down and return as text.</td></tr> 
   <tr><td>CEILING(Number)</td><td>Round up a number to nearest integer.</td></tr> 
   <tr><td>FLOOR(Number)</td><td>Round down a number to nearest integer.</td></tr> 
 </table>
+
+```DAX
+INT(3.14567) = 3
+
+ROUND(3.14467, 2)       = 3.14
+ROUND(3.14667, 2)       = 3.15
+ROUNDUP(3.14467, 2)     = 3.15
+ROUNDDOWN(3.14467, 2)   = 3.14
+```
 
 `Evaluating` logical tests and returns value for `TRUE` and `FALSE`
 
