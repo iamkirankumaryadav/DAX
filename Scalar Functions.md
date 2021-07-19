@@ -105,3 +105,23 @@ e.g. Check whether all the `rows` of the column are text or numeric or is there 
   <tr><td>ISNONTEXT</td><td>Check whether a value is not a text.</td></tr>
   <tr><td>ISTEXT</td><td>Check whether a value is text.</td></tr>
 </table>
+
+`Evaluate` the value to it's correct data type ot format.
+
+<table>
+  <tr><th colspan=2>Conversion Functions</th></tr>
+  <tr><td>CURRENCY(Value)</td><td>Evaluate and return as a currency data type.</td></tr>
+  <tr><td>FORMAT(Value, Format)</td><td>Convert a value to text in specified format.</td></tr>
+  <tr><td>DATE(Year, Month, Day)</td><td>Return the specified date in datetime format.</td></tr>
+  <tr><td>TIME(Hour, Minute, Second)</td><td>Return the specified time in datetime format.</td></tr>
+  <tr><td>DATEVALUE(DateText)</td><td>Convert a date in a text.</td></tr>
+  <tr><td>VALUE(Text)</td><td>Convert a text format date into a number.</td></tr>
+</table>
+
+```DAX
+Date Format (yyyy-mm-dd) =
+FORMAT (
+    "Calendar"[Date],
+    "yyyy-mm-dd"
+)
+```
