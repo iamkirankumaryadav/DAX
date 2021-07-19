@@ -80,7 +80,7 @@ FLOOR(9:34:15 AM, "0.15")    = 9:30:00 AM  -- Rounds the minute component down t
 CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to nearest multiple.
 ```
 
-`Evaluating` logical tests and returns value for `TRUE` and `FALSE`
+`Evaluating` logical tests and returns value `TRUE` or `FALSE`
 
 <table>
   <tr><th colspan=2>Logical Functions</th></tr>
@@ -88,6 +88,20 @@ CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to 
   <tr><td>AND</td><td>TRUE only if both are TRUE.</td></tr>
   <tr><td>OR</td><td>FALSE only if both are FALSE.</td></tr>
   <tr><td>NOT</td><td>Condition is NOT True.</td></tr>
+  <tr><td>SWITCH</td><td>Add Multiple Case with conditions.</td></tr> 
+  <tr><td>COALESCE</td><td>Count of all the values in a column.</td></tr> 
+</table>
+
+`Check` the value or data type of the value and returns `TRUE` or `FALSE`
+
+<table>
+  <tr><th colspan=2>Logical Functions</th></tr>
+  <tr><td>ISBLANK</td><td>Check whether a value is blank.</td></tr>
+  <tr><td>ISERROR</td><td>Check whether a value is an error.</td></tr>
+  <tr><td>ISLOGICAL</td><td>Check whether a value is a logical value.</td></tr>
+  <tr><td>ISNUMBER</td><td>Check whether a value is a number.</td></tr>
+  <tr><td>ISNONTEXT</td><td>Check whether a value is not a text.</td></tr>
+  <tr><td>ISTEXT</td><td>Check whether a value is text.</td></tr>
   <tr><td>SWITCH</td><td>Add Multiple Case with conditions.</td></tr> 
   <tr><td>COALESCE</td><td>Count of all the values in a column.</td></tr> 
 </table>
