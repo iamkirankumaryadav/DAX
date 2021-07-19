@@ -97,7 +97,7 @@ CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to 
 e.g. Check whether all the `rows` of the column are text or numeric or is there any blank row.
 
 <table>
-  <tr><th colspan=2>Logical Functions</th></tr>
+  <tr><th colspan=2>Information Functions</th></tr>
   <tr><td>ISBLANK</td><td>Check whether a value is blank.</td></tr>
   <tr><td>ISERROR</td><td>Check whether a value is an error.</td></tr>
   <tr><td>ISLOGICAL</td><td>Check whether a value is a logical value.</td></tr>
