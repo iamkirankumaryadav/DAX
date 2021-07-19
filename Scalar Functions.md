@@ -53,6 +53,19 @@ SUMX (
 
 `Converting` fields into desired formats i.e. `Text` to `Dates`, `Integers` to `Currency`, etc.
 
+<table>
+  <tr><th colspan=2>Rounding Functions</th></tr>
+  <tr><td>INT(Number)</td><td>Round a number to an Integer.</td></tr>
+  <tr><td>ROUND(Number, Digits)</td><td>Round a number to a specific digit.</td></tr>
+  <tr><td>ROUNDUP(Number, Digits)</td><td>Round a number up.</td></tr>
+  <tr><td>ROUNDDOWN(Number, Digits)</td><td>Round a number down.</td></tr>
+  <tr><td>MROUND(Number, Multiple)</td><td>Round a number to desired multiple.</td></tr>
+  <tr><td>TRUNC(Number)</td><td>Remove decimals.</td></tr>
+  <tr><td>FIXED(Number)</td><td>Round a number down and return as text.</td></tr> 
+  <tr><td>CEILING(Number)</td><td>Round up a number to nearest integer.</td></tr> 
+  <tr><td>FLOOR(Number)</td><td>Round down a number to nearest integer.</td></tr> 
+</table>
+
 `Evaluating` logical tests and returns value for `TRUE` and `FALSE`
 
 <table>
