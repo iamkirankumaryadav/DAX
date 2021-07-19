@@ -67,12 +67,17 @@ SUMX (
 </table>
 
 ```DAX
-INT(3.14567) = 3
+// Decimal Value  
+INT(3.14567)          = 3
+ROUND(3.14467, 2)     = 3.14
+ROUNDUP(3.14467, 2)   = 3.15
+ROUNDDOWN(3.14467, 2) = 3.14
+FIXED(3.14467, 2)     = '3.14'
 
-ROUND(3.14467, 2)       = 3.14
-ROUND(3.14667, 2)       = 3.15
-ROUNDUP(3.14467, 2)     = 3.15
-ROUNDDOWN(3.14467, 2)   = 3.14
+// Time Value
+MROUND(9:34:15 AM, "0.15")   = 9:30:00 AM  -- Minute Round.
+FLOOR(9:34:15 AM, "0.15")    = 9:30:00 AM  -- Rounds the minute component down to nearest multiple.
+CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to nearest multiple.
 ```
 
 `Evaluating` logical tests and returns value for `TRUE` and `FALSE`
