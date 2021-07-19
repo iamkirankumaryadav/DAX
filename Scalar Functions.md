@@ -36,6 +36,21 @@ COUNTROWS (
   <tr><td>COUNTX</td><td>Count of all the values in a column.</td></tr> 
 </table>
 
+```DAX
+// How the Code is written
+
+Measure Name =
+SUM ( 'Table Name'[Column Name] )
+
+// How it's interpreted by DAX
+
+Measure Name =
+SUMX (
+   'Table Name',
+   'Table Name'[Column Name]
+)
+```
+
 `Converting` fields into desired formats i.e. `Text` to `Dates`, `Integers` to `Currency`, etc.
 
 `Evaluating` logical tests and returns value for `TRUE` and `FALSE`
