@@ -89,8 +89,19 @@ CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to 
   <tr><td>OR</td><td>FALSE only if both are FALSE.</td></tr>
   <tr><td>NOT</td><td>Condition is NOT True.</td></tr>
   <tr><td>SWITCH</td><td>Add Multiple Case with conditions.</td></tr> 
-  <tr><td>COALESCE</td><td>Count of all the values in a column.</td></tr> 
+  <tr><td>COALESCE</td><td>Returns non blank evaluations.</td></tr> 
 </table>
+
+```DAX
+// Returns sum of all non blank values in a column.
+
+COALESCE (
+      SUM ( 
+          'Sales'[Quantity Sold],
+      ),
+      0
+)
+```      
 
 `Check` the value or data type of all the value or instances and returns `TRUE` or `FALSE`
 
