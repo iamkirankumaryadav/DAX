@@ -11,10 +11,21 @@ e.g. `Average` customer age, `Maximum` product profit, `Sum` of revenue, `Count`
   <tr><td>MIN</td><td>Minimum of all the values in a column.</td></tr>
   <tr><td>MAX</td><td>Maxmimum of all the values in a column.</td></tr>
   <tr><td>COUNT</td><td>Count of all the values in a column.</td></tr>
-  <tr><td>COUNTA</td><td>Count of all the values including missings in a column.</td></tr>
-  <tr><td>COUNTROWS</td><td>Count of all the rows in a column.</td></tr>
+  <tr><td>COUNTA</td><td>Count of all the non empty values in a column.</td></tr>
+  <tr><td>COUNTROWS</td><td>Count of the number of rows in a column.</td></tr>
   <tr><td>DISTINCTCOUNT</td><td>Count of all the unique rows in a column.</td></tr>
 </table>
+
+```DAX
+-- Distinct Count 
+
+Total Employee = 
+COUNTROWS (
+    VALUES (
+        'Employee Lookup'
+    )
+)
+```
 
 <table>
   <tr><th colspan=2>Iterator Functions</th></tr>
