@@ -18,6 +18,12 @@ Amount = SUM (
 4. `Primary` Key : Uniquely identifies each `Row` of a table, and match `Foreign` keys in related Data tables.
 5. `Cardinality` : The uniqueness of values in the column. 
 
+### Important Facts
+
+1. When we increase the number of `columns` the number of `rows` also increases because the combination increases.
+2. The limit of excel is `Million` rows.
+3. When then limit exceeds we need `Power Pivot` or `Power BI`
+
 ### Evaluation Order 
 
 1. `Individual` functions : Left to Right ( Startting from first parameter and following the order )
