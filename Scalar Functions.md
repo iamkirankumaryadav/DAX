@@ -89,7 +89,7 @@ CEILING(9:34:15 AM, "0.15")  = 9:45:00 AM  -- Rounds the minute component up to 
   <tr><td>OR</td><td>FALSE only if both are FALSE.</td></tr>
   <tr><td>NOT</td><td>Condition is NOT True.</td></tr>
   <tr><td>SWITCH</td><td>Add Multiple Case with conditions.</td></tr> 
-  <tr><td>COALESCE</td><td>Returns non blank evaluations.</td></tr> 
+  <tr><td>COALESCE</td><td>Returns non blank evaluations ( IF + ISBLANK )</td></tr> 
 </table>
 
 ```DAX
