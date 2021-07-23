@@ -37,6 +37,7 @@ e.g.
 
 ### Calculated Columns  
 
+- Column computed using a `DAX` language.
 - Computed row by row and stored in the model.
 
 ### Calculated Measures  
