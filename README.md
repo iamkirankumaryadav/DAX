@@ -29,11 +29,11 @@ Amount = SUM (
 Operator `Overloading` : Results are based on the `operators` used.
 
 e.g. 
-a. "5" + "4" = 9 
+- "5" + "4" = 9 
 - Here even if we try to add numbers within `quotes` DAX converts string to integers and `add` the numbers.
 - `DAX` knows that `+` is used to add numbers. 
 
-b. 5 & 9 = 59  
+- 5 & 9 = 59  
 - Here due to `&` DAX will consider Integers as string and `concatenate` the strings. 
 
 ### Calculated Columns  
