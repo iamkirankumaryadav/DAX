@@ -23,13 +23,28 @@ Amount = SUM (
 4. `Date` ( DateTime )
 5. `TRUE` / `FALSE` ( boolean )
 6. `String`
-7. `Binary` Object
 
-Calculated `Columns` : Computed row by row and stored in the model.
+### DAX type handling
 
-Calculated `Measures` : Computed at aggregate level.
+Operator `Overloading` : Results are based on the data type
 
-Column cannot be directly referenced in the Measure, it will be always surrounded by some `Aggregate` function.
+e.g. 
+1. "5" + "4" = 9 
+- Here even if we try to add numbers within `quotes` DAX converts string to integers and `add` the numbers.
+- `DAX` knows that `+` is used to add numbers. 
+
+2. 5 & 9 = 59  
+- Here due to `&` DAX will consider Integers as string and `concatenate` the strings. 
+
+### Calculated Columns  
+
+- Computed row by row and stored in the model.
+
+### Calculated Measures  
+
+- Computed at aggregate level.
+
+- Column cannot be directly referenced in the Measure, it will be always surrounded by some `Aggregate` function.
 
 ### Important Terms
 
