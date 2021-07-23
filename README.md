@@ -32,7 +32,6 @@ e.g.
 - "5" + "4" = 9 
 - Here even if we try to add numbers within `quotes` DAX converts string to integers and `add` the numbers.
 - `DAX` knows that `+` is used to add numbers. 
-
 - 5 & 9 = 59  
 - Here due to `&` DAX will consider Integers as string and `concatenate` the strings. 
 
