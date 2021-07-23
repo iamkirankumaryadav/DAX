@@ -15,6 +15,12 @@ Amount = SUM (
          )
 ```
 
+Calculated `Columns` : Computed row by row and stored in the model.
+
+Calculated `Measures` : Computed at aggregate level.
+
+Column cannot be directly referenced in the Measure, it will be always surrounded by some `Aggregate` function.
+
 ### Important Terms
 
 1. Data Table or `Fact` Table : Contains measurable values (cost, quantity and prices)
