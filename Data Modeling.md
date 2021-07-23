@@ -22,7 +22,7 @@ It creates a better `granularity` and help us to describe each attribute in more
 
 ### Denormalization
 
-- Creating a `single` table with all Business entity and attributes included redundancy and duplicated data.
+- Creating a `single` table with all Business entity and attributes including redundancy and duplicated data.
 
 ### Star Schema
 
