@@ -27,7 +27,10 @@ It creates a better `granularity` and help us to describe each attribute in more
 ### Star Schema
 
 - `Best` Schema for Power BI
-- Separation between `Facts` and `Dimensions`
+- `Facts` table in the middle and `Dimensions` tables are around.
+- Each Dimension table has `one` to `many` ( 1 to * ) relationship with the `column` of Fact table.
+- Fact table consist of various `Foreign` keys columns, it is connected with one column ( Primary key ) of each Dimension tables. 
+- `No` direct relationship is possible between the Dimension tables.
 
 #### 1. Fact 
 - Data table with all the important `quantitative` numeric metrics.  
@@ -43,8 +46,4 @@ It creates a better `granularity` and help us to describe each attribute in more
 - Especially used for grouping, slicing and filtering.
 - Contains only `Primary` keys and `Unique` keys ( Single row for each data )
 
-Each Dimension table has `one` to `many` ( 1 to * ) relationship with the `column` of Fact table.
-
-Fact table consist of various `Foreign` keys, it is connected with `multiple` Dimension table. 
-
-`No` direct relationship is possible between the Dimension tables. 
+ 
