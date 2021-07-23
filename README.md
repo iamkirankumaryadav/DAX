@@ -15,6 +15,16 @@ Amount = SUM (
          )
 ```
 
+### DAX Data Types
+
+1. `Integer` ( 64 bit )
+2. `Decimal` ( floating point number )
+3. `Currency` ( money )
+4. `Date` ( DateTime )
+5. `TRUE` / `FALSE` ( boolean )
+6. `String`
+7. `Binary` Object
+
 Calculated `Columns` : Computed row by row and stored in the model.
 
 Calculated `Measures` : Computed at aggregate level.
