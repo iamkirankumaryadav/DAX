@@ -27,3 +27,17 @@ It creates a better `granularity` and help us to describe each attribute in more
 ### Star Schema
 
 - `Best` Schema for Power BI
+- Separation between `Facts` and `Dimensions`
+
+#### 1. Fact 
+- Data table with all the important quantitative numeric metrics.  
+- price, quantity, cost, margin, etc.
+- Transactions, Sales, Returns, etc.
+- Especially used for Aggregating ( SUM, AVERAGE, MIN, MAX, COUNT )
+- Contains various `Foreign` keys and related to many dimension tables. 
+
+#### 2. Dimension
+- Something that describes a `fact`, describes the attributes of the table ( group, category, subcategory )
+- No duplicates or redundancy.
+- Especially used for grouping, slicing and filtering.
+- Contains only `Primary` keys and `Unique` keys ( Single row for each data )
