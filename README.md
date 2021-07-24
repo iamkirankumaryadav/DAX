@@ -40,12 +40,14 @@ e.g.
 - Column computed using a `DAX` language.
 - Calcualated column is always executed for one `row`
 - Calculation happens `row` by `row` and stored in the model.
+- Consumes memory in the model.
 
 ### Calculated Measures  
 
 - Computed at `aggregate` or `report` level.
-- Uses tables and aggregators.
+- Useful to calculate `percentage`, `ratio` and `aggregations`
 - Column cannot be directly referenced in the Measure, it will be always surrounded by some `Aggregate` function.
+- Consumes `CPU` at query time.
 
 ### Important Terms
 
