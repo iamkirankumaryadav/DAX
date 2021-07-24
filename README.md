@@ -116,6 +116,10 @@ IF(Logical, Return IF True, Return IF False)
        <tr><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td></tr>
 </table>
 
+`AND` ( A, B ) or A `&&` B
+
+`OR` ( A, B ) or A `||` B
+
 ### Error Handling
 
 Helps us to identify `missing` data. ( Quality assurance and testing )
