@@ -163,7 +163,7 @@ CALCULATE ( Expression, Filter1, Filter2 )
 
 We can call a column from different table in the expression.
 
-The table should be in `relationship`.
+The table should be in `relationship`
 
 ```DAX
 =
