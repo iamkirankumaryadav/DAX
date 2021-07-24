@@ -1,5 +1,7 @@
 ### Table and Filter Functions
 
+`DAX` has more than `250` functions, many of them manipulate tables.
+
 Filter `Tables` or filter results of `Measures`
 
 <table>
