@@ -15,6 +15,13 @@ Filter `Tables` or filter results of `Measures`
            <tr><td>ALLSELECTED</td><td></td></tr>
 </table>
 
+`FILTER`
+- Add new condition.
+- Restricts the number of `rows` of a table.
+- Need a table as `input` and `returns` a table.
+- The input can be another `FILTER`
+- Can be iterated using `X` functions ( SUMX, AVERAGEX, MAXX, MINX, etc. )
+
 Specify or add `Columns` based on existing data.
 
 <table>
