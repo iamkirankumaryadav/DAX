@@ -158,3 +158,15 @@ CALCULATE ( Expression, Filter1, Filter2 )
 # Expression : An existing Measure or a DAX Formula for a valid measure.
 # Filter     : Filter Expressions (Asia[Country] = "India") or (Student[Age] > 18)
 ```
+
+`RELATED` works from `many` to `one` side.
+
+We can call a column from different table in the expression.
+
+```DAX
+=
+SUMX ( 
+    Sales,
+    Sales[Quantity] * RELATED ( 'Product'[Unit Price] )
+)
+```
