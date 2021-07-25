@@ -22,6 +22,10 @@ Filter `Tables` or filter results of `Measures`
 - The input can be another `FILTER`
 - Can be iterated using `X` functions ( SUMX, AVERAGEX, MAXX, MINX, etc. )
 
+`ISEMPTY`
+- Check if a table is `empty`
+- Returns `TRUE` if the table is `empty` else returns `FALSE`
+
 Specify or add `Columns` based on existing data.
 
 <table>
