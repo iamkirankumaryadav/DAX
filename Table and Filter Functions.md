@@ -15,6 +15,10 @@ Filter `Tables` or filter results of `Measures`
            <tr><td>ALLSELECTED</td><td></td></tr>
 </table>
 
+`ALL`
+- No need to use `ALL`, if you are creating a Calculated Column.
+- Because in Calculated Column every operation is performed `row` by `row`
+
 `FILTER`
 - Add new condition.
 - Restricts the number of `rows` of a table.
