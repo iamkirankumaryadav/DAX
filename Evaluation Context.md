@@ -27,6 +27,6 @@ Calculation happening `row` by `row`, then there is row context on the table.
 
 Starting any expression with `SUMX` or any iterator creates a row context on the table.
 
-Calculated column is also calculated at `row` context automatically.
+Calculated column is also calculated at `row` context automatically, they have there own `row` context.
 
 A `Filter` context filters table and `Row` context iterates over each rows of the table.
