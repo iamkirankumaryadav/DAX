@@ -8,7 +8,7 @@ Value of each `cell` is calculated according to the different combinations of ap
 
 ### 1. Filter Context  
 
-`Filters` working on your model
+`Filters` working on your model.
 
 Defined by : 
 
@@ -16,6 +16,8 @@ Defined by :
 - `Column` Selection
 - Report `Filters`
 - `Slicer` Selection
+- `Filter` tables
+
 
 ### 2. Row Context
 
@@ -26,3 +28,5 @@ Calculation happening `row` by `row`, then there is row context on the table.
 Starting any expression with `SUMX` or any iterator creates a row context on the table.
 
 Calculated column is also calculated at `row` context automatically.
+
+A `Filter` context filters table and `Row` context iterates over each rows of the table.
