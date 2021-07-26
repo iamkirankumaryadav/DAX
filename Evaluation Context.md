@@ -22,3 +22,7 @@ Defined by :
 An existing iteration happening over each `row` of the table.
 
 Calculation happening `row` by `row`, then there is row context on the table.
+
+Starting any expression with `SUMX` or any iterator creates a row context on the table.
+
+Calculated column is also calculated at `row` context automatically.
