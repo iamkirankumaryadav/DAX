@@ -1,4 +1,4 @@
-### Date Table
+### Date Table & Time Intelligence
 
 - `Time Intelligence` needs date table.
 - All dates should be present ( no gap )
