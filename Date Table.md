@@ -48,6 +48,8 @@ CALENDAR (
 - Useful for `Aggregating` date over time or `Comparing` date over time.
 - `YTD` : Year To Date
 - `QTD` : Quarter To Date
+- `MTD` : Month To Date
+- They all need a `Date Table` and `CALCULATE` function.
 - Running Total
 - Same Period
 - Working Day
