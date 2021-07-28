@@ -13,3 +13,28 @@
 - But it only considers the dates available in the tables ( Order date, Delivery date, Birthdate, etc )
 - And we cannot customize the auto generated date and time.
 - The range it selects is unpredective ( Starting Date will be the Birtdate of a Customer which can be more than 100 years )
+
+### CALENDARAUTO
+
+`CALENDARAUTO` : Automatically creates a calendar table based on the dataset content.
+
+### CALENDAR
+
+We can manually specify start date and end date.
+
+```
+CALENDAR (
+   DATE ( 2021, 01, 01 ),
+   DATE ( 2021, 12, 31 )
+)
+```
+
+We can also allow the table to take reference from existing table for start and end dates.
+
+```
+CALENDAR (
+   MIN ( 'Order Date' ),
+   MAX ( 'Order Date' )
+)
+```
+
