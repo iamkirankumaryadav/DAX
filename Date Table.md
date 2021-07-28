@@ -45,16 +45,10 @@ CALENDAR (
 
 ### Time Intelligence
 
-Useful for `Aggregating` date over time or `Comparing` date over time.
-
-`YTD` : Year To Date
-
-`QTD` : Quarter To Date
-
-Running Total
-
-Same Period
-
-Working Day
-
-Fiscal Year
+- Useful for `Aggregating` date over time or `Comparing` date over time.
+- `YTD` : Year To Date
+- `QTD` : Quarter To Date
+- Running Total
+- Same Period
+- Working Day
+- Fiscal Year
