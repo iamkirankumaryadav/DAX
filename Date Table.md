@@ -38,3 +38,9 @@ CALENDAR (
 )
 ```
 
+### Mark as Date table
+
+- Need to `mark` calendar as date table.
+- `Set` the column containing the `[Date]`
+
+### Using Multiple Dates
