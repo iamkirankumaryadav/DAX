@@ -88,3 +88,21 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 `SELECTCOLUMN` :  Similar to `SELECT` statement in `SQL`.
 
 `SUMMARIZE` : Performs `SELECT DISTINCT` or `GROUP BY` in `SQL`
+
+### CALCULATETABLE
+
+`CALCULATETABLE` : Used to apply filters on existing columns.
+
+```
+CALCULATETABLE (
+    Product,                // Table Expression
+    Product[Color] = "Red"  // Any Slicer
+)
+```
+
+```
+CALCULATETABLE (
+    Product,                // Table Expression
+    Product[Color] IN { "Red"  // Any Slicer
+)
+```
