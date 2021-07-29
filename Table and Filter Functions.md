@@ -93,6 +93,10 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 
 `CALCULATETABLE` : Used to apply filters on existing columns.
 
+`Evaluate` a table expression and `Returns` a table.
+
+Useful for `Slicer`, `Page` filter or `Report` filter.
+
 ```
 CALCULATETABLE (
     Product,                // Table Expression
@@ -100,9 +104,62 @@ CALCULATETABLE (
 )
 ```
 
+For each product it compares whether the color of the product is red.
+
 ```
 CALCULATETABLE (
-    Product,                // Table Expression
-    Product[Color] IN { "Red"  // Any Slicer
+    Product,                                      // Table Expression
+    Product[Color] IN { "Red", "Blue", "Green" }  // Any Slicer ( Multiple Selection )
 )
 ```
+
+### Evaluation Order 
+
+`CALCULATE` and `CALCULATETABLE` first evaluates the outer filter.
+
+```
+CALCULATETABLE (
+    CALCULATETABLE ( 
+        Product,                // 3rd ( All the products of all the colors )
+        ALL ( Product[Color] )  // 2nd ( Ignores the filter on the color column )
+    ),
+    Product[Color] = "Red"      // 1st ( Add filter for product with only red color )
+)
+```
+
+### FILTER
+
+`FILTER` should be used for row context ( Calculation for each row )
+
+When we need to filter by using `Measure` then use `FILTER`
+
+```
+FILTER (
+    Product,                                      
+    Product[Color] IN { "Red", "Blue", "Green" } 
+)
+```
+
+### SELECTCOLUMNS
+
+`SELECTCOLUMNS` is similar to `SELECT` query in `SQL`
+
+Select the columns from an existing table.
+
+Due to `row context` we get each and every rows ( including duplicate values )
+
+`Reduces` the column ( select only those we need in a report )
+
+```DAX
+SELECTCOLUMNS (
+    'Product', 
+    'Category', RELATED ( 'Product Category'[Category] ), // From another table with relationship 
+    'Color', Product[Color],
+    'Name', Product[Name],
+    'Sales Amount', [Sales Amount]                        // Measure ( Sales of the current product )
+)   
+```
+
+### ADDCOLUMNS
+
+Includes all the `Rows` and `Columns` of the table and we can add new columns ( extends the columns )
