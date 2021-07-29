@@ -83,3 +83,8 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 - Column names are determined by `left` table.
 - Relations cannot be created with 3rd table.
 - Useful in the case to find active customer, repeat purchases and new employee or new customers in recent period.
+
+
+`SELECTCOLUMN` :  Similar to `SELECT` statement in `SQL`.
+
+`SUMMARIZE` : Performs `SELECT DISTINCT` or `GROUP BY` in `SQL`
