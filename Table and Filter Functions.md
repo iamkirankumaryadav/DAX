@@ -205,3 +205,19 @@ ADDCOLUMNS (
     "Sales", [Sales Amount]
 )    
 ```
+
+### SUMMARIZECOLUMNS
+
+- Advance version of `SUMMARIZE`
+- Similar to `SUMMARIZE`, but we don't have to specify the Table Expression.
+- Cannot be used in a `Measure`
+- But `SUMMARIZECOLUMNS` can include `Measures` coming from different Tables. 
+- Automatically removes the `empty` rows.
+
+
+```
+SUMMARIZECOLUMNS (
+    'Product Category'[Category]  // Group By Column
+    'Product'[Color]
+)
+```
