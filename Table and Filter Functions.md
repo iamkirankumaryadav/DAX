@@ -153,7 +153,7 @@ Due to `row context` we get each and every rows ( including duplicate values )
 ```DAX
 SELECTCOLUMNS (
     'Product', 
-    'Category', RELATED ( 'Product Category'[Category] ), // From another table with relationship 
+    'Category', RELATED ( 'Product Category'[Category] ), // From another table with relationship corresponding to current product
     'Color', Product[Color],
     'Name', Product[Name],
     'Sales Amount', [Sales Amount]                        // Measure ( Sales of the current product )
