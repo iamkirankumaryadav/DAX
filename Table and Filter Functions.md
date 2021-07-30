@@ -84,11 +84,6 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 - Relations cannot be created with 3rd table.
 - Useful in the case to find active customer, repeat purchases and new employee or new customers in recent period.
 
-
-`SELECTCOLUMN` :  Similar to `SELECT` statement in `SQL`.
-
-`SUMMARIZE` : Performs `SELECT DISTINCT` or `GROUP BY` in `SQL`
-
 ### CALCULATETABLE
 
 `CALCULATETABLE` : Used to apply filters on existing columns.
@@ -178,8 +173,35 @@ ADDCOLUMNS (
     SELECTCOLUMNS (
         'Product',
         'Color', Product[Color],
-        'Amount', [Sales Amount]
+        'Amount', [Sales Amount]   // Color and Amount is evaluated for each Product.
     ),
     'Product Color Amount', [Sales Amount]
 )
+```
+
+### SUMMARIZE
+
+`SUMMARIZE` : Similar to `SELECT DISTINCT` and `GROUP BY` in `SQL`
+
+```
+Summarize Sales of Product by its Category.
+
+SUMMARIZE (
+    Sales,                        // Source Table
+    'Product Category'[Category]  // Group By Column
+    'Product'[Color]
+)
+```
+
+```
+We can add new column in SUMMARIZE
+
+ADDCOLUMNS (
+    SUMMARIZE (
+        Sales,                        // Source Table
+        'Product Category'[Category]  // Group By Column
+        'Product'[Color]
+    ),
+    "Sales", [Sales Amount]
+)    
 ```
