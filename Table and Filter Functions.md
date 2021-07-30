@@ -156,10 +156,30 @@ SELECTCOLUMNS (
     'Category', RELATED ( 'Product Category'[Category] ), // From another table with relationship corresponding to current product
     'Color', Product[Color],
     'Name', Product[Name],
-    'Sales Amount', [Sales Amount]                        // Measure ( Sales of the current product )
+    'Sales Amount', [Sales Amount]                        // Measure ( Sales Amount of the current product )
 )   
 ```
 
 ### ADDCOLUMNS
 
-Includes all the `Rows` and `Columns` of the table and we can add new columns ( extends the columns )
+Includes all the `Rows` and `Columns` of the existing table and we can add new columns ( extends the columns )
+
+```DAX
+ADDCOLUMNS (
+    'Product',                      // Table 
+    'Sales Amount', [Sales Amount]  // New Column
+)
+```
+
+`ADDCOLUMNS` + `SELECTCOLUMNS`
+
+```DAX
+ADDCOLUMNS (
+    SELECTCOLUMNS (
+        'Product',
+        'Color', Product[Color],
+        'Amount', [Sales Amount]
+    ),
+    'Product Color Amount', [Sales Amount]
+)
+```
