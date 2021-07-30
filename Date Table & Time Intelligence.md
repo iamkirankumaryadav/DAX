@@ -20,7 +20,7 @@
 
 ### CALENDAR
 
-We can manually specify start date and end date.
+We can manually specify `Start` date and `End` date.
 
 ```
 CALENDAR (
@@ -29,7 +29,7 @@ CALENDAR (
 )
 ```
 
-We can also allow the table to take reference from existing table for start and end dates.
+We can also allow the table to take reference from existing table for `Start` and `End` dates.
 
 ```
 CALENDAR (
@@ -50,7 +50,7 @@ CALENDAR (
 - `QTD` : Quarter To Date
 - `MTD` : Month To Date
 - They all need a `Date Table` and `CALCULATE` function.
-- Running Total
+- `Running` Total
 - Same Period
-- Working Day
-- Fiscal Year
+- `Working` Day
+- `Fiscal` Year
