@@ -1,5 +1,7 @@
 ### Date Table & Time Intelligence
 
+<p href='#calendar'>CALENDAR</p>
+
 - `Time Intelligence` needs date table.
 - Must contain all the dates ( days ) for the year ( no gap )
 - Must have atleast one field set as a `Date` or `DateTime` datatype.
@@ -19,7 +21,7 @@
 - And we cannot customize the auto generated date and time.
 - The range it selects is unpredective ( Starting Date will be the Birtdate of a Customer which can be more than 100 years )
 
-### CALENDAR
+<h3 name='calendar'> CALENDAR </h3>
 
 Returns a table with one column of all dates between `Start` and `End` date. 
 
