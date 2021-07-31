@@ -94,7 +94,10 @@ CALCULATE (
 
 `PREVIOUSYEAR` `PREVIOUSQUARTER` `PREVIOUSMONTH`
 
-`DATESINPERIOD` : Returns all the dates in a given number of periods, starting from a reference date.
+### DATESINPERIOD 
+
+- Returns all the dates in a given number of periods, starting from a reference date.
+- Moving `Annual` Total.
 
 ```DAX
 CALCULATE (
@@ -107,3 +110,9 @@ CALCULATE (
    )
 )
 ```
+
+### Running Total
+
+- There is no function to Calculate the `Runnning Total`
+- We need to manually create a `Filter` for evaluating the `Running Total`
+- `Running Total` : Sum of Sales Amount since the beginning of the history of the transactions.
