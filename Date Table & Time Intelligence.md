@@ -98,7 +98,7 @@ CALCULATE (
 
 ```DAX
 CALCULATE (
-    SUM ( [Sales Amount] ),
+    [Sales Amount],
     DATESINPERIOD (
          Date[Date],
          MAX ( Date[Date] ),  // Reference Start Date
