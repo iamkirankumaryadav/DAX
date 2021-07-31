@@ -93,3 +93,17 @@ CALCULATE (
 `PARALLELPERIOD` : 
 
 `PREVIOUSYEAR` `PREVIOUSQUARTER` `PREVIOUSMONTH`
+
+`DATESINPERIOD` : Returns all the dates in a given number of periods, starting from a reference date.
+
+```DAX
+CALCULATE (
+    SUM ( [Sales Amount] ),
+    DATESINPERIOD (
+         Date[Date],
+         MAX ( Date[Date] ),  // Reference Start Date
+         -1,
+         YEAR
+   )
+)
+```
