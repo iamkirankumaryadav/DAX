@@ -1,6 +1,7 @@
 ### Date Table & Time Intelligence
 
 <p><a href='#calendar'>CALENDAR</a></p>
+<p><a href='#auto'>CALENDARAUTO</a></p>
 
 - `Time Intelligence` needs date table.
 - Must contain all the dates ( days ) for the year ( no gap )
@@ -48,7 +49,7 @@ CALENDAR (
 )
 ```
 
-### CALENDARAUTO
+<h3 name='auto'> CALENDARAUTO </h3>
 
 - Returns a table with one column of dates based on a Fiscal year end month.
 - `Range` of dates is calculated automatically based on data in the model.
