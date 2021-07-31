@@ -2,6 +2,7 @@
 
 <p><a href='#calendar'>CALENDAR</a></p>
 <p><a href='#auto'>CALENDARAUTO</a></p>
+<p><a href='#add'>DATEADD</a></p>
 
 - `Time Intelligence` needs date table.
 - Must contain all the dates ( days ) for the year ( no gap )
@@ -71,3 +72,22 @@ CALENDARAUTO ( FiscalYearEndMonth )
 - Same Period
 - `Working` Day
 - `Fiscal` Year
+
+<h3 name='add'> DATEADD </h3>
+
+- Compare current year sales with previous or last year sales.
+
+```DAX
+CALCULATE (
+    [Sales Amount],   // Evaluate Sales Amount
+    DATEADD ( 
+         Date[Date],  // Date
+         -1,          // Number of Interval ( - Back, + Forth )
+         YEAR         // Interval ( YEAR, QUARTER, MONTH, DAY )
+    )
+)        
+```
+
+`SAMEPERIODLASTYEAR` : Compare or Calculate the sales of the same period for last year.
+
+`PARALLELPERIOD` : 
