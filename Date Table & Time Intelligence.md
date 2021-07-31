@@ -82,7 +82,7 @@ CALCULATE (
     [Sales Amount],   // Evaluate Sales Amount
     DATEADD ( 
          Date[Date],  // Date
-         -1,          // Number of Interval ( - Back, + Forth )
+         -1,          // Number of Interval ( - Past, + Future )
          YEAR         // Interval ( YEAR, QUARTER, MONTH, DAY )
     )
 )        
