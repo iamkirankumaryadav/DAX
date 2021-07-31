@@ -88,6 +88,8 @@ CALCULATE (
 )        
 ```
 
-`SAMEPERIODLASTYEAR` : Compare or Calculate the sales of the same period for last year.
+`SAMEPERIODLASTYEAR` : Compare or Calculate the sales for the same period of last year ( Goes back 1 year )
 
 `PARALLELPERIOD` : 
+
+`PREVIOUSYEAR` `PREVIOUSQUARTER` `PREVIOUSMONTH`
