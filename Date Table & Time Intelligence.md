@@ -1,7 +1,7 @@
 ### Date Table & Time Intelligence
 
 - `Time Intelligence` needs date table.
-- All dates should be present ( no gap )
+- Must contain all the dates ( days ) for the year ( no gap )
 - Starting from `1st` January to `31st` December ( Even if the data is not present from 1st January )
 - Including every quarter, month, week, day.
 - Otherwise `Time Intelligence` will not work. 
