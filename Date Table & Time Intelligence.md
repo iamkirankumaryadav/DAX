@@ -2,6 +2,11 @@
 
 - `Time Intelligence` needs date table.
 - Must contain all the dates ( days ) for the year ( no gap )
+- Must have atleast one field set as a `Date` or `DateTime` datatype.
+- Cannot contain duplicate `Date` or `DateTime` values.
+- If using `Time` component within `Date` column, all times must be identical ( i.e `12:00:00 AM` )
+- Should be marked as a `Date` table.
+- If `Time` is present in `Date` field, split the `Time` component into a new column.
 - Starting from `1st` January to `31st` December ( Even if the data is not present from 1st January )
 - Including every quarter, month, week, day.
 - Otherwise `Time Intelligence` will not work. 
@@ -14,13 +19,9 @@
 - And we cannot customize the auto generated date and time.
 - The range it selects is unpredective ( Starting Date will be the Birtdate of a Customer which can be more than 100 years )
 
-### CALENDARAUTO
-
-`CALENDARAUTO` : Automatically creates a calendar table based on the dataset content.
-
 ### CALENDAR
 
-We can manually specify `Start` date and `End` date.
+Returns a table with one column of all dates between `Start` and `End` date. 
 
 ```
 CALENDAR (
@@ -38,10 +39,21 @@ CALENDAR (
 )
 ```
 
-### Mark as Date table
+```
+CALENDAR (
+   DATE ( YEAR ( MIN ( Calendar[Transaction Date] ) ), 01, 01 ),
+   DATE ( YEAR ( MAX ( Calendar[Transaction Date] ) ), 12, 31 )
+)
+```
 
-- Need to `mark` calendar as date table.
-- `Set` the column containing the `[Date]`
+### CALENDARAUTO
+
+- Returns a table with one column of dates based on a Fiscal year end month.
+- `Range` of dates is calculated automatically based on data in the model.
+
+```DAX
+CALENDARAUTO ( FiscalYearEndMonth ) // Fiscal Year End Month : 1 to 12 ( 1 - January, 2 - February .... 12 - December )
+```
 
 ### Time Intelligence
 
