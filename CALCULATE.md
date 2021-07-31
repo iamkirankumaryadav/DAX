@@ -27,3 +27,28 @@ Process of turning `Row` context into `Filter` context.
 By default, Calculated Columns understand `Row` context but no `Filter` context.
 
 To Create `Filter` context at `Row` level, `CALCULATE` is used. 
+
+### Evaluation Order 
+
+```
+Sales of Store 7 (CALCULATE) = 
+CALCULATE (
+    [Sales],                    // 3rd
+    Store[Store ID] = 7,        // 1st Filters are evaluated first.
+    Product[Group] = "Gadgets"  // 2nd
+)
+```
+
+If the Function contains `Modifiers`
+
+```
+Sales of Store 7 (CALCULATE) = 
+CALCULATE (
+    [Sales],                    // 4th
+    Store[Store ID] = 7,        // 2nd Filters are evaluated after Modifiers.
+    Product[Group] = "Gadgets"  // 3rd
+    ALL (                       // 1st Modifier is evaluated first
+         Store                  
+    )
+)
+```
