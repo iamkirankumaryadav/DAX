@@ -52,7 +52,8 @@ CALENDAR (
 - `Range` of dates is calculated automatically based on data in the model.
 
 ```DAX
-CALENDARAUTO ( FiscalYearEndMonth ) // Fiscal Year End Month : 1 to 12 ( 1 - January, 2 - February .... 12 - December )
+CALENDARAUTO ( FiscalYearEndMonth ) 
+// Fiscal Year End Month : 1 to 12 ( 1 - January, 2 - February .... 12 - December )
 ```
 
 ### Time Intelligence
