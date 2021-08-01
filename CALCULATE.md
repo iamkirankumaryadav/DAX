@@ -1,18 +1,38 @@
 ### CALCULATE
 
-The most important funtion in `DAX`
+`CALCULATE` : The most important funtion in `DAX`
+- `Evaluate` a given expression or formula under a set of defined `filters`.
+
+```DAX
+CALCULATE ( 
+    Expression, // An existing Measure or a DAX Formula for a valid measure.
+    Filter1,    // Filter Expressions (Asia[Country] = "India") 
+    Filter2     // Filter Expressions (Student[Age] > 18)
+)
+```
+
+`RELATED` works from `many` to `one` side.
+
+We can call a column from different table in the expression.
+
+The table should be in `relationship`
+
+```DAX
+SUMX ( 
+    Sales,
+    Sales[Quantity] * RELATED ( 'Product'[Unit Price] )
+)
+```
 
 ### Expanded Tables
 
-Expanded tables contain all the columns of the base ( `fact` table ) table plus all the columns ( `lookup` table ) on the `ONE` side of the relationship.
+`Expanded` tables contain all the columns of the base ( `fact` table ) table plus all the columns ( `lookup` table ) on the `ONE` side of the relationship.
 
 ### Context Transition
 
-Process of turning `Row` context into `Filter` context.
-
-By default, Calculated Columns understand `Row` context but no `Filter` context.
-
-To Create `Filter` context at `Row` level, `CALCULATE` is used. 
+- Process of turning `Row` context into `Filter` context.
+- By default, Calculated Columns understand `Row` context but no `Filter` context.
+- To Create `Filter` context at `Row` level, `CALCULATE` is used. 
 
 ### Evaluation Order 
 
