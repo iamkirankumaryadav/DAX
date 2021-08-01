@@ -65,10 +65,25 @@ GENERATE (
 ```
 ### ROW
 
-Create a `Row` with specified Column Name. 
+Create a one `Row` with specified Column Name. 
 
 ```DAX
 ROW ( "Sales", [Sales Amount], "Margin", [Margin] )
+```
+
+```DAX
+ROW (
+    "Jan Sales",
+    CALCULATE (
+        SUM ( 'Sales'[Quantity] ),
+        'Date'[Month] = "January"
+    )
+    "Feb Sales",
+    CALCULATE (
+        SUM ( 'Sales'[Quantity] ),
+        'Date'[Month] = "February"
+    )
+)    
 ```
 
 `Filter` can be added to the single row.
@@ -79,6 +94,7 @@ CALCULATETABLE (
         "Sales", [Sales Amount], 
         "Margin", [Margin]
     ),
+    'Product'[Color] = "Red"
 )
 ```
 
