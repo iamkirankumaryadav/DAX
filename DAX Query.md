@@ -126,3 +126,78 @@ DATATABLE (
           }
 )
 ```
+
+### UNION
+
+`Combines` two or more tables ( Keep the duplicated rows )
+
+```
+VAR SunMon = 
+    CALCULATETABLE (
+        VALUES ( 'Date'[Day of Week] )
+        'Date'[Week Number] IN { 1, 2 }
+    )
+    
+VAR MonTue = 
+    CALCULATETABLE (
+        VALUES ( 'Date'[Day of Week] )
+        'Date'[Week Number] IN { 2, 3 }
+    )
+
+RETURN 
+    ADDCOLUMNS (
+        DISTINCT ( UNION ( SunMon, MonTue ) )
+        "Sales", [Sales Amount]
+    )
+```
+
+### INTERSECT
+
+Returns the `common` row between two tables.
+
+```
+RETURN 
+    ADDCOLUMNS (
+        INTERSECT ( SunMon, MonTue )
+        "Sales", [Sales Amount]
+    )
+```
+
+Useful to identify Returning Customers
+
+```DAX
+CALCULATETABLE (
+    VAR FirstDay = MIN ( 'Date'[Date] )
+    VAR CurrentCustomer = VALUES ( 'Sale'[CustomerKey] )
+    VAR PreviousCustomer = 
+        CALCULATETABLE (
+            VALUES ( 'Sales'[CustomerKey] ),
+            'Date'[Date] < FirstDay
+        )
+    VAR ReturningCustomer = INTERSECT ( CurrentCustomer, Previous Customer )
+    RETURN 
+        ReturningCustomer, 
+        'Date'[Year] = 2007,
+        'Date'[Month] = 10
+)    
+```        
+
+### EXCEPT
+
+`Order` of the table matters 
+
+```
+RETURN 
+    ADDCOLUMNS (
+        EXCEPT ( SunMon, MonTue ) // Will return only Sunday
+        "Sales", [Sales Amount]
+    )
+```
+
+```
+RETURN 
+    ADDCOLUMNS (
+        EXCEPT ( MonTue, SunMon ) // Will return only Tuesday
+        "Sales", [Sales Amount]
+    )
+```
