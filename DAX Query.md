@@ -48,3 +48,17 @@ GENERATE (                                   // Generate and Evaluate Sales Amou
     )
 )
 ```
+
+### GENERATE
+
+Equivalent to `APPLY` in `SQL`
+
+```DAX
+GENERATE (
+    VALUES ( 'Product Category'[Category] ),
+    SELECTCOLUMNS (
+        RELATEDTABLE ( 'Product Subcategory' ),
+        "Subcategory", 'Product Subcategory'[Subcategory]
+    )
+)
+// Combines every row of first argument with every row of second argument.
