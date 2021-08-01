@@ -21,8 +21,12 @@ ADDCOLUMNS (
 
 ```DAX
 TOPN (
-    10,                                  // Top 10 Rows
-    VALUES ( 'Product'[Product Name] ),  // Distinct Values ( Product Name )
-    [Sales Amount]                       // Evaluate Sales Amount
+    10,                                       // Top 10 Rows
+    ADDCOLUMNS (
+        VALUES ( 'Product'[Product Name] ),  // Distinct Values ( Product Name )
+        "Sales", [Sales Amount]              // Add New Column and Evaluate Sales Amount
+   ),
+   [Sales] // Sales Amount is Evaluated so no need to Evaluate again and can be displayed directly.
 )
+
 ```      
