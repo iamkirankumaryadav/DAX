@@ -144,31 +144,4 @@ IF (
    "No Sales",
    [Sales (Last Year)]
 )
-```
-                                                                                                         
-### Important Functions 
-
-### 1. CALCULATE
-- `Evaluate` a given expression or formula under a set of defined `filters`.
-
-```DAX
-=
-CALCULATE ( Expression, Filter1, Filter2 )
-
-# Expression : An existing Measure or a DAX Formula for a valid measure.
-# Filter     : Filter Expressions (Asia[Country] = "India") or (Student[Age] > 18)
-```
-
-`RELATED` works from `many` to `one` side.
-
-We can call a column from different table in the expression.
-
-The table should be in `relationship`
-
-```DAX
-=
-SUMX ( 
-    Sales,
-    Sales[Quantity] * RELATED ( 'Product'[Unit Price] )
-)
-```
+```                                                                                                       
