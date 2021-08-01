@@ -68,6 +68,23 @@ GENERATE (
 Create a one `Row` with specified Column Name. 
 
 ```DAX
+Row Demo = 
+ROW ( 
+    "Name", "Kirankumar",
+    "Age", 25,
+    "Designation", "Data Scientist"
+)
+```
+
+```DAX
+Output :
+
+<table>
+<tr colspan=3><th></th><th></th><th></th></tr>
+</table>
+```
+
+```DAX
 ROW ( "Sales", [Sales Amount], "Margin", [Margin] )
 ```
 
