@@ -34,9 +34,9 @@ TOPN (
 `Top 3` Sales for each Category
 
 ```DAX
-GENERATE (                                   // Generate and Evaluate Sales Amount for Distinct combination of Top 3 Product based on Distinct Category.
-    VALUES ( 'Product'[Category] ), 
-    CALCULATETABLE (
+GENERATE (                                   // Generate and Evaluate Sales Amount 
+    VALUES ( 'Product'[Category] ),          // for Distinct combination of Top 3 
+    CALCULATETABLE (                         // Product based on Distinct Category.
         TOPN (
              3,
              ADDCOLUMNS (
