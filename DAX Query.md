@@ -30,3 +30,21 @@ TOPN (
 )
 
 ```      
+
+`Top 3` Sales for each Category
+
+```DAX
+GENERATE (  
+    VALUES ( 'Product'[Category] ), 
+    CALCULATETABLE (
+        TOPN (
+             3,
+             ADDCOLUMNS (
+                VALUE ( 'Product'[Name] )
+                "Sales", [Sales Amount]
+             ),
+             [Sales]
+        )
+    )
+)
+```
