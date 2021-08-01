@@ -98,3 +98,19 @@ CALCULATETABLE (
 )
 ```
 
+### DATATABLE
+
+Create a full `Table`, useful to build small temporary tables.
+
+```DAX
+DATATABLE (
+          "Price Range", STRING,
+          "Minimum Price", CURRENCY,
+          "Maximum Price", CURRENCY,
+          {
+              ( "Low", 0, 10 ),
+              ( "Medium", 10, 100 ), 
+              ( "High", 100, 1000 )              
+          }
+)
+```
