@@ -1,15 +1,18 @@
 ### Hierarchies 
 
-Predefined exploration path
+- Predefined exploration path
+- `Year` `Quarter` `Month` `Day` 
+- `Category` `Sub Category` `Product`
+- `Continent` `Country` `State` `City` `Pincode`
+- Make browsing a `Model` easier.
+- All columns of Hierarchy should belong to same table ( You cannot create Hierarchy between columns of different tables )
+- Use `RELATED` to move column in the right place.
 
-`Year` `Quarter` `Month` `Day` 
+### Parent / Child Hierarchy
 
-`Category` `Sub Category` `Product`
+`Manager` `Salesperson` ( Where one person report another person )
 
-`Continent` `Country` `State` `City` `Pincode`
+`CDO` `Zonal Manager` `BDM` `Branch Manager` `Branch Assistant` `Field Executive`
 
-Make browsing a `Model` easier.
-
-All columns of Hierarchy should belong to same table ( You cannot create Hierarchy between columns of different tables )
-
-Use `RELATED` to move column in the right place.
+- Leaf Node should not be expanded.
+- Each Node contains SUM of all child nodes.
