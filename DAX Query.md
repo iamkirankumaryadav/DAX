@@ -172,19 +172,20 @@ CALCULATETABLE (
     VAR PreviousCustomer = 
         CALCULATETABLE (
             VALUES ( 'Sales'[CustomerKey] ),
-            'Date'[Date] < FirstDay
+            'Date'[Date] < FirstDay   // Customers who came before the FirstDay.
         )
-    VAR ReturningCustomer = INTERSECT ( CurrentCustomer, Previous Customer )
+    VAR ReturningCustomer = INTERSECT ( CurrentCustomer, Previous Customer ) // Will return only common rows.
     RETURN 
         ReturningCustomer, 
-        'Date'[Year] = 2007,
+        'Date'[Year] = 2007,  // Filters 
         'Date'[Month] = 10
 )    
 ```        
 
 ### EXCEPT
 
-`Order` of the table matters 
+- Subtract one set from another.
+- `Order` of the table matters. 
 
 ```
 RETURN 
@@ -200,4 +201,14 @@ RETURN
         EXCEPT ( MonTue, SunMon ) // Will return only Tuesday
         "Sales", [Sales Amount]
     )
+```
+We can use `EXCEPT` to obtain New Customers
+
+```DAX
+VAR NewCustomer = EXCEPT ( CurrentCustomer - PreviousCustomer )
+
+RETURN 
+    { ( [Sales Amount], CALCULATE ( [Sales Amount], New Customer ) ) },
+    'Date'[Year] = 2007,
+    'Date'[Month Number] = 2   
 ```
