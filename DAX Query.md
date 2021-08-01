@@ -78,11 +78,11 @@ ROW (
 
 ```DAX
 Output :
-
-<table>
-<tr colspan=3><th></th><th></th><th></th></tr>
-</table>
 ```
+<table>
+<tr colspan=3><th>Name</th><th>Age</th><th>Designation</th></tr>
+<tr><td>Kirankumar</td><td>25</td><td>Data Scientist</td></tr>
+</table>
 
 ```DAX
 ROW ( "Sales", [Sales Amount], "Margin", [Margin] )
