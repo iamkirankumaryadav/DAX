@@ -62,3 +62,23 @@ GENERATE (
     )
 )
 // Combines every row of first argument with every row of second argument.
+```
+### ROW
+
+Create a `Row` with specified Column Name. 
+
+```DAX
+ROW ( "Sales", [Sales Amount], "Margin", [Margin] )
+```
+
+`Filter` can be added to the single row.
+
+```DAX
+CALCULATETABLE (
+    ROW (
+        "Sales", [Sales Amount], 
+        "Margin", [Margin]
+    ),
+)
+```
+
