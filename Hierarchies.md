@@ -2,8 +2,14 @@
 
 Predefined exploration path
 
-`Year` `Quarter` `Month` `Day`
+`Year` `Quarter` `Month` `Day` 
 
 `Category` `Sub Category` `Product`
 
 `Continent` `Country` `State` `City` `Pincode`
+
+Make browsing a `Model` easier.
+
+All columns of Hierarchy should belong to same table ( You cannot create Hierarchy between columns of different tables )
+
+Use `RELATED` to move column in the right place.
