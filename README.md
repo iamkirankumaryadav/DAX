@@ -8,6 +8,10 @@ Programming language that resembles `Excel`
 
 `DAX` is a functional language, the execution flows with function calls.
 
+It means, calculations mostly use `functions` to generate the results.
+
+`DAX` is designed for enhancing `Data Modeling`, `Reporting` and `Analytics` capability.
+
 ```DAX
 Amount = SUM (
            FILTER ( VALUES ( 'Date'[Year] ), 'Date'[Year] < 2005 ),
