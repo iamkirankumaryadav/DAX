@@ -14,10 +14,17 @@ It means, calculations mostly use `functions` to generate the results.
 `DAX` is designed for enhancing `Data Modeling`, `Reporting` and `Analytics` capability.
 
 ```DAX
-Amount = SUM (
-           FILTER ( VALUES ( 'Date'[Year] ), 'Date'[Year] < 2005 ),
-           IF ( 'Date'[Year] >= 2000, [Sales Amount] * 100, [Sales Amount] * 90 )
-         )
+SUM (
+    FILTER ( 
+           VALUES ( 'Date'[Year] ), 
+           'Date'[Year] < 2005 ),
+           IF ( 
+              'Date'[Year] >= 2000, 
+              [Sales Amount] * 100, 
+              [Sales Amount] * 90 
+           )
+    )
+)
 ```
 
 ### DAX Data Types
