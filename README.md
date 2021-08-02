@@ -21,22 +21,27 @@ Amount = SUM (
 
 ### DAX Data Types
 
-1. `Integer` ( 64 bit )
-2. `Decimal` ( floating point number )
-3. `Currency` ( money )
-4. `Date` ( DateTime )
-5. `TRUE` / `FALSE` ( boolean )
-6. `String`
+Selection of the accurate data type helps to reduce the `size` of a data model and improve `performance` when to `refresh` data and use of any report.
+
+1. `Whole` Number
+2. `Decimal` Number ( floating point number )
+3. `Boolen` ( TRUE / FALSE )
+4. `Text` ( String )
+5. `Currency` ( money )
+6. `Date` ( DateTime )
+7. `String`
 
 ### DAX type handling
 
 Operator `Overloading` : Results are based on the `operators` used.
 
 e.g. 
-- "5" + "4" = 9 
+
+1. "5" + "4" = 9 ( Arithmetic Operation )
 - Here even if we try to add numbers within `quotes` DAX converts string to integers and `add` the numbers.
-- `DAX` knows that `+` is used to add numbers. 
-- 5 & 9 = 59  
+- `DAX` knows that `+` is used to `Add` numbers. 
+
+2. 5 & 9 = 59 ( Concatenation )
 - Here due to `&` DAX will consider Integers as string and `concatenate` the strings. 
 
 ### Calculated Columns  
