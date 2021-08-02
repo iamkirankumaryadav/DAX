@@ -1,6 +1,8 @@
 # DAX
 
-`Data Analysis Expressions` | [SQLBI](https://www.sqlbi.com/) | [DAX Guide](https://dax.guide/) | [DAX Formatter](https://www.daxformatter.com/) | [DAX Do](https://dax.do/) | [DAX Patterns](https://www.daxpatterns.com/)
+`Data Analysis Expressions` 
+
+[SQLBI](https://www.sqlbi.com/) | [DAX Guide](https://dax.guide/) | [DAX Formatter](https://www.daxformatter.com/) | [DAX Do](https://dax.do/) | [DAX Patterns](https://www.daxpatterns.com/)
 
 <table>
 	<tr colspan=2><th>Index</th><th>Title</th></tr>
