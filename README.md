@@ -119,7 +119,7 @@ IF(Logical, Return IF True, Return IF False)
 
 <table>
        <tr><th colspan=2>String or Logical Operator</th></tr>
-       <tr><td>&</td><td>[City] & " " & [State]</td></tr>
+       <tr><td>&</td><td>[City] & " " & [State] ( Concatenate )</td></tr>
        <tr><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td></tr>
        <tr><td>||</td><td>[State] = "MH" || [Country] = "IND"</td></tr>
        <tr><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td></tr>
