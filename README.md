@@ -32,7 +32,7 @@ SUM (
 )
 ```
 
-### DAX Data Types
+<h3 name=type>DAX Data Types</h3>
 
 Selection of the accurate data type helps to reduce the `size` of a data model and improve `performance` when to `refresh` data and use of any report.
 
