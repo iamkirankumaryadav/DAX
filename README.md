@@ -4,7 +4,7 @@
 
 <table>
 	<tr colspan=2><th>Index</th><th>Title</th></tr>
-	<tr><td>1</td><td><a href=#type>Data Type</a></td></tr>
+	<tr><th>1</th><td><a href=#type>Data Type</a></td></tr>
 </table>
 
 Programming language that resembles `Excel` 
