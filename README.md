@@ -143,19 +143,28 @@ RETURN name or expression
 - Used in the calculations so that they `return` relevant results for every value.
 - Produce a result related to each and every value of a visual or pivot table including rows and columns total.
 
-#### 1. `Row` Context 	
+#### 1. Row Context 	
 
-#### 2. `Query` Context
+- `Row Context` is related to current `rows`
+- If you create a `Calculated Column`, the `Row Context` involves the values of all the `Columns` ( entire `Row` )
+- If that table has a `relationship` with other table, then it includes all the `related` values from that `Table` for that `Row`
+- In `Iterative` functions in `DAX` over table, each `Row` has its own `Row Context`
 
-#### 3. `Filter` Context  
+#### 2. Filter Context  
 
-- Applying filters on set of values of columns or tables using `DAX` calculations.
-- `Filter` Context applies on the top of `Row` and `Query` Context :
+- Applying `Filters` on set of values of `Columns` or `Tables` using `DAX` calculations.
+- `Filter Context` applies on the top of `Row Context` and `Query Context` 
 
 1. `Attributes` in `rows` or `columns`
 2. By `Slicer`
 3. Through `Filter Pane`
-4. To the calculated `Measure`
+4. To the `Calculated Measure`
+
+#### 3. Query Context
+
+- Combination of `Row Context` and `Filter Context` creates a final query for `DAX`
+- Users explicitly mention `Row Context` and `Filter Context` for `DAX`
+- `DAX` implicitly creates the `Query Context` from that `Row Context` and `Filter Context`.
 
 ### Evaluation Order 
 
