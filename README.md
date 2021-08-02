@@ -2,6 +2,11 @@
 
 `Data Analysis Expressions` | [SQLBI](https://www.sqlbi.com/) | [DAX Guide](https://dax.guide/) | [DAX Formatter](https://www.daxformatter.com/) | [DAX Do](https://dax.do/) | [DAX Patterns](https://www.daxpatterns.com/)
 
+<table>
+	<tr colspan=2><th>Index<th><th>Title</th></tr>
+	<tr><td>1</td><td><a href=#type>Data Type</a></td></tr>
+</table>
+
 Programming language that resembles `Excel` 
 - Power Pivot
 - Power BI
