@@ -16,12 +16,12 @@ It means, calculations mostly use `functions` to generate the results.
 ```DAX
 SUM (
     FILTER ( 
-    	VALUES ( 'Date'[Year] ), 
-        'Date'[Year] < 2005 ),
+    	VALUES ( 'Date'[Year] ), // Distinct Year
+        'Date'[Year] < 2005 ),   // Year before 2005
         IF ( 
-	   'Date'[Year] >= 2000, 
-           [Sales Amount] * 100, 
-           [Sales Amount] * 90 
+	   'Date'[Year] >= 2000, // Condition | Expression
+           [Sales Amount] * 100, // If TRUE
+           [Sales Amount] * 90   // If FALSE
         )
     )
 )
