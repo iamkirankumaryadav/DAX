@@ -204,7 +204,7 @@ RETURN name or expression
 - Applying `Filters` on set of values of `Columns` or `Tables` using `DAX` calculations.
 - `Filter Context` applies on the top of `Row Context` and `Query Context` 
 
-1. `Attributes` in `rows` or `columns`
+1. `Rows` or `Columns`
 2. By `Slicer`
 3. Through `Filter Pane`
 4. To the `Calculated Measure`
