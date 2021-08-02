@@ -45,27 +45,65 @@ e.g.
 2. 5 & 9 = 59 ( Concatenation )
 - Here due to `&` DAX will consider Integers as string and `concatenate` the strings. 
 
+### DAX Function Category
+
+There are more than `200` DAX functions, there are `9` categories in DAX function.
+
+1. `Date` and `Time`
+2. `Time Intelligence`
+3. `Information`
+4. `Logical`
+5. `Mathematical`
+6. `Statistical`
+7. `Text`
+8. `Parent` / `Child`
+9. `Other` 
+
+### Components of DAX Data Model
+
+- A `Data Model` consists of `Data`, `Calculations` and `Formatting` rules and it combines to create an object.
+- This object helps to `Explore` and `Understand` the `Dataset`
+
+1. `Data`
+2. `Tables`
+3. `Columns`
+4. `Relationships`
+5. `Measures`
+6. `Hierarchies`
+
+### Calculations
+
+There are `3` types of Calculations in `DAX`
+
+1. Calculated `Columns`
+2. Calculated `Measures`
+3. Calculated `Tables`
+
 ### Calculated Columns  
 
 - Column computed using a `DAX` language.
-- Calcualated column is always executed for one `row`
 - Calculation happens `row` by `row` and stored in the model.
-- Consumes memory in the model.
+- Consumes `memory` in the model.
 
 ### Calculated Measures  
 
-- Computed at `aggregate` or `report` level.
+- Computes at `aggregate` or `report` level.
 - Useful to calculate `percentage`, `ratio` and `aggregations`
-- Column cannot be directly referenced in the Measure, it will be always surrounded by some `Aggregate` function.
+- Columns cannot be directly referenced in the Measure, it will be always surrounded by some `Aggregate` function.
 - Consumes `CPU` at query time.
+
+### Calculated Tables
+
+- Creates new table or slice the subset from some existing table.
+- Consumes `memory` in the model.
 
 ### Important Terms
 
-1. Data Table or `Fact` Table : Contains measurable values (cost, quantity and prices)
-2. Lookup or `Dimension` Table : Provides descriptive attributes about each dimension.
-3. `Foreign` Key : Contains multiple instances of each value, and are used to match the `Primary` keys in related Lookup tables.
-4. `Primary` Key : Uniquely identifies each `Row` of a table, and match `Foreign` keys in related Data tables.
-5. `Cardinality` : The uniqueness of values in the column. 
+1. `Data` or `Fact` Table : Contains `quantitative` values ( cost, quantity and prices )
+2. `Lookup` or `Dimension` Table : Provides `descriptive` attributes about each dimension.
+3. `Foreign` Key : Contains `multiple` instances of each value, and are used to match the `Primary` keys in related `Lookup` tables.
+4. `Primary` Key : Uniquely identifies each `row` of a table, and match `Foreign` keys in related `Fact` tables.
+5. `Cardinality` : The `uniqueness` of values in the column. 
 
 ### Important Facts
 
@@ -100,12 +138,12 @@ IF(Logical, Return IF True, Return IF False)
 5. `Disable` the refreshing of Data if that do not need refresh everytime from the Power Query Editor.
 
 <table>        
-           <tr><th colspan=2>Arithmetic Operator</th></tr>
-           <tr><td>Addition</td><td>+</td></tr>
-           <tr><td>Subtraction</td><td>-</td></tr>
-           <tr><td>Multiplication</td><td>*</td></tr>
-           <tr><td>Division</td><td>/</td></tr>
-           <tr><td>Exponent</td><td>^</td></tr>
+        <tr><th colspan=2>Arithmetic Operator</th></tr>
+        <tr><td>Addition</td><td>+</td></tr>
+        <tr><td>Subtraction</td><td>-</td></tr>
+        <tr><td>Multiplication</td><td>*</td></tr>
+        <tr><td>Division</td><td>/</td></tr>
+        <tr><td>Exponent</td><td>^</td></tr>
 </table>
 
 <table>
