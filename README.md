@@ -98,7 +98,7 @@ e.g.
 2. 5 & 9 = 59 ( Concatenation )
 - Here due to `&` DAX will consider Integers as string and `concatenate` the strings. 
 
-<h3 name=function>DAX Function Category<h3>
+<h3 name=function>DAX Function Category</h3>
 
 There are more than `200` DAX functions, there are `9` categories in DAX function.
 
