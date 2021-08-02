@@ -112,6 +112,14 @@ There are `3` types of Calculations in `DAX`
 4. `Primary` Key : Uniquely identifies each `row` of a table, and match `Foreign` keys in related `Fact` tables.
 5. `Cardinality` : The `uniqueness` of values in the column. 
 
+### Important points about Data Modeling
+
+1. Use `Star` schema (One to Many) relationship.
+2. Always create a relationship with `one way` filters.
+3. Only include the data you need for analysis.
+4. Split out individual `Date` and `Time` components from `DateTime` field.
+5. `Disable` the refreshing of Data if that do not need refresh everytime from the Power Query Editor.
+
 ### Important Facts
 
 1. When we increase the number of `columns` the number of `rows` also increases because the combination increases.
@@ -129,6 +137,25 @@ VAR name = expression
 
 RETURN name or expression
 ```
+### Context in DAX
+
+- `Context` is how `DAX` apply layers of `filters` to calculations and tables.
+- Used in the calculations so that they `return` relevant results for every value.
+- Produce a result related to each and every value of a visual or pivot table including rows and columns total.
+
+#### 1. `Row` Context 	
+
+#### 2. `Query` Context
+
+#### 3. `Filter` Context  
+
+- Applying filters on set of values of columns or tables using `DAX` calculations.
+- `Filter` Context applies on the top of `Row` and `Query` Context :
+
+1. `Attributes` in `rows` or `columns`
+2. By `Slicer`
+3. Through `Filter Pane`
+4. To the calculated `Measure`
 
 ### Evaluation Order 
 
@@ -147,14 +174,6 @@ IF(Logical, Return IF True, Return IF False)
        )
   )
 ```
-
-### Important points about Data Modeling
-
-1. Use `Star` schema (One to Many) relationship.
-2. Always create a relationship with `one way` filters.
-3. Only include the data you need for analysis.
-4. Split out individual `Date` and `Time` components from `DateTime` field.
-5. `Disable` the refreshing of Data if that do not need refresh everytime from the Power Query Editor.
 
 ### Operators in DAX
 
