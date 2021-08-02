@@ -15,14 +15,14 @@ It means, calculations mostly use `functions` to generate the results.
 
 ```DAX
 SUM (
-    FILTER ( 
-           VALUES ( 'Date'[Year] ), 
-           'Date'[Year] < 2005 ),
-           IF ( 
-              'Date'[Year] >= 2000, 
-              [Sales Amount] * 100, 
-              [Sales Amount] * 90 
-           )
+	FILTER ( 
+		VALUES ( 'Date'[Year] ), 
+        'Date'[Year] < 2005 ),
+		IF ( 
+			'Date'[Year] >= 2000, 
+            [Sales Amount] * 100, 
+            [Sales Amount] * 90 
+        )
     )
 )
 ```
