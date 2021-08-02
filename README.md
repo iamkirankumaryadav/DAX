@@ -164,7 +164,7 @@ RETURN name or expression
 
 - Combination of `Row Context` and `Filter Context` creates a final query for `DAX`
 - Users explicitly mention `Row Context` and `Filter Context` for `DAX`
-- `DAX` implicitly creates the `Query Context` from that `Row Context` and `Filter Context`.
+- `DAX` implicitly creates the `Query Context` from that `Row Context` and `Filter Context`
 
 ### Evaluation Order 
 
