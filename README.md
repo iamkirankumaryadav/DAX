@@ -118,6 +118,18 @@ There are `3` types of Calculations in `DAX`
 2. The limit of excel is `Million` rows.
 3. When then limit exceeds we need `Power Pivot` or `Power BI`
 
+### DAX Variable
+
+- `Variables` make the calculation easier to understand.
+- Writing any complex or `nested` expression using `DAX` functions, variables can help to break these complex calculations into smaller, more useful sections.
+- `Reduce` complexity, Easy to `Debug`, Improve `readability` and Improve `performance`
+
+```DAX
+VAR name = expression
+
+RETURN name or expression
+```
+
 ### Evaluation Order 
 
 1. `Individual` functions : Left to Right ( Startting from first parameter and following the order )
@@ -143,6 +155,8 @@ IF(Logical, Return IF True, Return IF False)
 3. Only include the data you need for analysis.
 4. Split out individual `Date` and `Time` components from `DateTime` field.
 5. `Disable` the refreshing of Data if that do not need refresh everytime from the Power Query Editor.
+
+### Operators in DAX
 
 <table>        
         <tr><th colspan=2>Arithmetic Operator</th></tr>
