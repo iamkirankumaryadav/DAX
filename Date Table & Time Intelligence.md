@@ -4,6 +4,8 @@
 <p><a href='#auto'>CALENDARAUTO</a></p>
 <p><a href='#add'>DATEADD</a></p>
 
+`1 Year` = `12 Months` = `54 Weeks` = `365 Days`
+
 - `Time Intelligence` needs date table.
 - Must contain all the dates ( days ) for the year ( no gap )
 - Must have atleast one field set as a `Date` or `DateTime` datatype.
