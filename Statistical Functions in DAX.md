@@ -2,6 +2,6 @@
 
 `AVERAGE` :  Arithmetic `Mean` of the column values.
 
-`AVERAGEA` :  Handles Text and Non Numeric Data.
+`AVERAGEA` :  Handles `Text`, `Boolean` and Non Numeric Data.
 
-`AVERAGEX` : 
+`AVERAGEX` : `Iterate` over each row of the table and calculates Average.
