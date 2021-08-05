@@ -13,5 +13,7 @@
 ```DAX
 
 SUMMARIZE (
-    Table, // Table in the Data Model | Calculated Table | Function which returns Table | Variable that stores Table Expression.
-    Group By Column Name // Column Name from the specified table or any column from a table that has relationship with the first parameter table.
+    Table,                  // Table in the data model | Calculated table | Function which returns table | Variable that stores table expression.
+    Group By Column Name,   // Column name from the specified table or any column from a table that has relationship with the first parameter table.
+    Name,                   // Name for the summary column in double quotes ("")
+    Expression              // Aggregation component of the summary table.
