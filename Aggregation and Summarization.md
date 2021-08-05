@@ -10,6 +10,9 @@
 
 `SUMMARIZE`
 
+- Creates a `Summary` of the table by grouping and aggregating multiple columns on the basis of existing relationships.
+- Other `Columns` from the `RELATED Tables` can be included ( If `Many` to `One` Relationships exist to reach Reference Tables )
+
 ```DAX
 
 SUMMARIZE (
