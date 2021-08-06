@@ -1,4 +1,4 @@
-### Aggregation and Summarization
+### Summarization
 
 - In any company, `Millions` of Transaction Data with Thousands of Rows per day have been captured.
 - From this type of large data, we can prepare a `Summary` table using `Aggregation` and represent summarize visual.
