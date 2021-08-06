@@ -68,8 +68,9 @@ COUNTX (
 - We can use `CALCULATE` with `COUNTROWS` to ignore `BLANK()`
 
 ```DAX
+// This will only count the non blank rows.
 CALCULATE (
     COUNTROWS ( Table ),
-    NOT ISBLANK ( 'Table'[Column] )
+    NOT ISBLANK ( 'Table'[Column] ) 
 )
 ```
