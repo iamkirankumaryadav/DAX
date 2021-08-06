@@ -25,7 +25,7 @@ AVERAGE ( 'Table'[Column] )
 
 ```DAX
 AVERAGEX (
-    Table,
+    'Table',
     'Table'[Column]
 )
 ```
@@ -34,7 +34,7 @@ If the Column Values are `String`
 
 ```DAX
 AVERAGEX (
-    Table,
+    'Table',
     VALUE ( 'Table'[Column] )
 )
 ```
@@ -58,7 +58,7 @@ COUNT ( 'Table'[Column] )
 
 ```DAX
 COUNTX (
-    Table,
+    'Table',
     'Table'[Column]
 )
 ```        
@@ -66,13 +66,39 @@ COUNTX (
 ### COUNTROWS
 
 - Counts the number of `Rows` in the table or specified `Column` including `blank` rows.
-- We can use `CALCULATE` with `COUNTROWS` to ignore `BLANK()`
+- We can use `CALCULATE` with `COUNTROWS` to ignore `BLANK()` and `Empty` string.
 
 ```DAX
-// This will only count the non blank rows.
-
 CALCULATE (
-    COUNTROWS ( Table ),
+    COUNTROWS ( 'Table' ),
     NOT ISBLANK ( 'Table'[Column] ) && Table[Column] <> "" // Ignore rows with BLANK() and Empty string values.
+)
+```
+
+### COUNTBLANK
+
+- Counts the number of `BLANK()` rows in the column.
+- It returns `BLANK()`, if there are no rows.
+- `Empty` string is considered as a `BLANK()` for `COUNTBLANK`
+
+```DAX
+COUNTBLANK ( 'Table'[Column] )
+```
+
+Equivalent faster expression for counting `Blank` rows.
+
+```DAX
+CALCULATE (
+    COUNTROWS ( 'Table' ),
+    KEEPFILTERS ( ISBLANK ( 'Table'[Column] ) )
+)
+```
+
+Equivalent faster expression for counting rows with `Empty` strings.
+
+```DAX
+CALCULATE (
+    COUNTROWS ( 'Table' ),
+    KEEPFILTERS ( 'Table'[Value] = "" )
 )
 ```
