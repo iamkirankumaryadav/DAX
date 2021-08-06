@@ -7,11 +7,13 @@
 - Return the `Arithmetic Mean` of the values in the column.
 - Return a `Scalar` value of `Currency` or `Decimal` type.
 
-`AVERAGE` function internally executes `AVERAGEX`
-
 ```DAX
 AVERAGE ( 'TableName'[ColumnName] )
 ```
+
+### AVERAGEX
+
+`AVERAGE` function internally executes `AVERAGEX` ( `Measure` )
 
 ```DAX
 AVERAGEX (
