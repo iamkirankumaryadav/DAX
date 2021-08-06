@@ -8,7 +8,7 @@
 - Return a `Scalar` value of `Currency` or `Decimal` type.
 
 ```DAX
-AVERAGE ( 'TableName'[ColumnName] )
+AVERAGE ( 'Table'[Column] )
 ```
 
 ### AVERAGEA
@@ -19,14 +19,14 @@ AVERAGE ( 'TableName'[ColumnName] )
 
 ### AVERAGEX
 
-- `AVERAGE` function internally executes `AVERAGEX` ( `Measure` )
+- `AVERAGE` function internally executes `AVERAGEX`,  without any performance difference.
 - `AVERAGEX` ignores `BLANK()`
 - `AVERAGEX` considers `0`
 
 ```DAX
 AVERAGEX (
-    TableName,
-    'TableName'[ColumnName]
+    Table,
+    'Table'[Column]
 )
 ```
 
@@ -34,7 +34,30 @@ If the Column Values are `String`
 
 ```DAX
 AVERAGEX (
-    TableName,
-    VALUE ( 'TableName'[ColumnName] )
+    Table,
+    VALUE ( 'Table'[Column] )
 )
 ```
+
+### COUNT
+
+- Counts the number of `Rows` in the table where the specified `Column` has non blank value.
+
+```DAX
+COUNT ( 'Table'[Column] )
+```
+
+### COUNTA
+
+- Similar to `COUNT`, can operate on a `BOOLEAN` data type.
+
+### COUNTX
+
+- The `COUNT` function internally executes `COUNTX`, without any performance difference.
+
+```DAX
+COUNTX (
+    Table,
+    'Table'[Column]
+)
+```        
