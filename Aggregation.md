@@ -54,12 +54,14 @@ COUNT ( Table[Column] )
 
 ### COUNTX
 
+- Count the number of values which result from evaluating an expression for each row of a table.
 - The `COUNT` function internally executes `COUNTX`, without any performance difference.
+- When function finds no rows it returns `Blank`
 
 ```DAX
 COUNTX (
-    Table,
-    Table[Column]
+    Table,         // Table
+    Table[Column]  // Expression
 )
 ```        
 
