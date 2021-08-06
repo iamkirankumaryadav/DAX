@@ -41,7 +41,8 @@ AVERAGEX (
 
 ### COUNT
 
-- Counts the number of `Rows` in the table where the specified `Column` has non blank value.
+- Counts the number of `Rows` in the table.
+- `COUNT` does not count `BLANK()` rows, but it counts `empty` strings.
 
 ```DAX
 COUNT ( 'Table'[Column] )
@@ -72,6 +73,6 @@ COUNTX (
 
 CALCULATE (
     COUNTROWS ( Table ),
-    NOT ISBLANK ( 'Table'[Column] ) 
+    NOT ISBLANK ( 'Table'[Column] ) && Table[Column] <> "" // Do not consider BLANK() rows and rows with Empty string.
 )
 ```
