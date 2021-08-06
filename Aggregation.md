@@ -13,7 +13,9 @@ AVERAGE ( 'TableName'[ColumnName] )
 
 ### AVERAGEX
 
-`AVERAGE` function internally executes `AVERAGEX` ( `Measure` )
+- `AVERAGE` function internally executes `AVERAGEX` ( `Measure` )
+- `AVERAGEX` ignores `BLANK()`
+- `AVERAGEX` considers `0`
 
 ```DAX
 AVERAGEX (
