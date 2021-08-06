@@ -73,6 +73,6 @@ COUNTX (
 
 CALCULATE (
     COUNTROWS ( Table ),
-    NOT ISBLANK ( 'Table'[Column] ) && Table[Column] <> "" // Do not consider BLANK() rows and rows with Empty string.
+    NOT ISBLANK ( 'Table'[Column] ) && Table[Column] <> "" // Ignore rows with BLANK() and Empty string values.
 )
 ```
