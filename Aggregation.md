@@ -11,6 +11,12 @@
 AVERAGE ( 'TableName'[ColumnName] )
 ```
 
+### AVERAGEA
+
+- Similar to `AVERAGE`, handles non numeric data.
+- `AVERAGEA` manages a `BOOLEAN` data type as an integer ( `FALSE` : `0` & `TRUE` : `1` )
+- `AVERAGEA` always considers a `STRING` as `0`, regardless of the content of the string.
+
 ### AVERAGEX
 
 - `AVERAGE` function internally executes `AVERAGEX` ( `Measure` )
