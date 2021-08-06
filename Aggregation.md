@@ -25,8 +25,8 @@ AVERAGE ( 'Table'[Column] )
 
 ```DAX
 AVERAGEX (
-    'Table',
-    'Table'[Column]
+    Table,
+    Table[Column]
 )
 ```
 
@@ -34,8 +34,8 @@ If the Column Values are `String`
 
 ```DAX
 AVERAGEX (
-    'Table',
-    VALUE ( 'Table'[Column] )
+    Table,
+    VALUE ( Table[Column] )
 )
 ```
 
@@ -45,7 +45,7 @@ AVERAGEX (
 - `COUNT` does not count `BLANK()` rows, but it counts `empty` strings.
 
 ```DAX
-COUNT ( 'Table'[Column] )
+COUNT ( Table[Column] )
 ```
 
 ### COUNTA
@@ -58,21 +58,33 @@ COUNT ( 'Table'[Column] )
 
 ```DAX
 COUNTX (
-    'Table',
-    'Table'[Column]
+    Table,
+    Table[Column]
 )
 ```        
 
 ### COUNTROWS
 
-- Counts the number of `Rows` in the table or specified `Column` including `blank` rows.
+- Counts the number of `Rows` in the table including `blank` rows.
 - We can use `CALCULATE` with `COUNTROWS` to ignore `BLANK()` and `Empty` string.
 
 ```DAX
 CALCULATE (
-    COUNTROWS ( 'Table' ),
-    NOT ISBLANK ( 'Table'[Column] ) && Table[Column] <> "" // Ignore rows with BLANK() and Empty string values.
+    COUNTROWS ( Table ),
+    NOT ISBLANK ( Table[Column] ) && Table[Column] <> "" // Ignore rows with BLANK() and Empty string values.
 )
+```
+
+Count the `DISTINCT` rows in the table
+
+```DAX
+COUNTROWS ( DISTINCT ( Table ) )  or DISTINCTCOUNT ( Table[Column] )
+```
+
+Count whether a column has only one value.
+
+```DAX
+COUNTROWS ( VALUES ( table[column] ) ) = 1 or HASONEVALUE ( table[column] ) )
 ```
 
 ### COUNTBLANK
@@ -82,15 +94,15 @@ CALCULATE (
 - `Empty` string is considered as a `BLANK()` for `COUNTBLANK`
 
 ```DAX
-COUNTBLANK ( 'Table'[Column] )
+COUNTBLANK ( Table[Column] )
 ```
 
 Equivalent faster expression for counting `Blank` rows.
 
 ```DAX
 CALCULATE (
-    COUNTROWS ( 'Table' ),
-    KEEPFILTERS ( ISBLANK ( 'Table'[Column] ) )
+    COUNTROWS ( Table ),
+    KEEPFILTERS ( ISBLANK ( Table[Column] ) )
 )
 ```
 
@@ -98,7 +110,7 @@ Equivalent faster expression for counting rows with `Empty` strings.
 
 ```DAX
 CALCULATE (
-    COUNTROWS ( 'Table' ),
-    KEEPFILTERS ( 'Table'[Value] = "" )
+    COUNTROWS ( Table ),
+    KEEPFILTERS ( Table[Value] = "" )
 )
 ```
