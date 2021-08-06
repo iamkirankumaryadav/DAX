@@ -116,3 +116,17 @@ CALCULATE (
     KEEPFILTERS ( Table[Value] = "" )
 )
 ```
+
+### DISTINCTCOUNT
+
+
+### DISTINCT
+
+- Returns a single column table of `Unique` Values.
+- Does not return the `Blank` row.
+
+
+### VALUES
+
+- Returns a single column table of `Unique` Values.
+- Similar to `DISTINCT` but also have additional `Blank` rows for the values which is not found.
