@@ -61,3 +61,15 @@ COUNTX (
     'Table'[Column]
 )
 ```        
+
+### COUNTROWS
+
+- Counts the number of `Rows` in the table or specified `Column` including `blank` rows.
+- We can use `CALCULATE` with `COUNTROWS` to ignore `BLANK()`
+
+```DAX
+CALCULATE (
+    COUNTROWS ( Table ),
+    NOT ISBLANK ( 'Table'[Column] )
+)
+```
