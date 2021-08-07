@@ -1,4 +1,7 @@
-### Aggregation
+<table>
+    <tr><th><h3>Aggregation Functions</h3></th></tr>
+</table>
+
 
 `Aggregation` function returns a `Scalar` value to a column or an expression evaluated by iterating a table expression.
 
