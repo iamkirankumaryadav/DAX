@@ -12,7 +12,7 @@
 	<tr><th>4</th><td><a href=#comp>Components of DAX Data Model</a></td></tr>
 	<tr><th>5</th><td><a href=#calculate>Calculated Column, Measure and Table</a></td></tr>
 	<tr><th>6</th><td><a href=#imp>Important Facts and Points</a></td></tr>
-	<tr><th>7</th><td><a href=#var>Dax Variable</a></td></tr>
+	<tr><th>7</th><td><a href=#var>VAR & RETURN</a></td></tr>
 	<tr><th>8</th><td><a href=#context>Row, Filter and Query Context</a></td></tr>
 	<tr><th>9</th><td><a href=#order>Evaluation Order</a></td></tr>	
 </table>
@@ -204,18 +204,31 @@ There are `3` types of Calculations in `DAX`
 2. The limit of excel is `Million` rows.
 3. When then limit exceeds we need `Power Pivot` or `Power BI`
 
-<h3 name=var>DAX Variable</h3>
+<h3 name=var>Statements VAR & RETURN</h3>
 
+- The `VAR` keyword introduces variables in an expression.
 - `Variables` make the calculation easier to understand.
 - Writing any complex or `nested` expression using `DAX` functions, variables can help to break these complex calculations into smaller, more useful sections.
 - `Reduce` complexity, Easy to `Debug`, Improve `readability` and Improve `performance`
+- The results ( defined value or evaluated expressions ) of `VAR` statement is returned by `RETURN` statement.
 
 ```DAX
-VAR name = expression
+VAR Pi = 3.14                                                         // Defined 
 
-RETURN name or expression
+VAR AreaOfCircle = SUMX ( Math, Pi * Math[Radius] * Math[Radius] )    // Expression
+
+RETURN AreaOfCircle
 ```
-	
+
+- The `RETURN` keyword consumes variables defined in previous `VAR` statements.
+- It access to all expressions and results defined in the `VAR` statements before or above `RETURN`. 
+
+```DAX
+VAR Name = "Kirankumar"
+
+RETURN Name
+```
+
 <h3 name=context>Context in DAX</h3>
 
 - `Context` is how `DAX` apply layers of `filters` to calculations and tables.
