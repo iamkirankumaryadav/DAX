@@ -45,7 +45,7 @@ AVERAGEX (
 )
 ```
 
-### COUNT
+<h3 name=count>COUNT</h3>
 
 - Counts the number of `Rows` in the table.
 - `COUNT` does not count `BLANK()` rows, but it counts `empty` strings.
@@ -123,7 +123,7 @@ CALCULATE (
 )
 ```
 
-### DISTINCTCOUNT
+<h3 name=distinct>DISTINCTCOUNT</h3>
 
 
 ### DISTINCT
