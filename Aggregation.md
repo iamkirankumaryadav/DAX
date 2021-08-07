@@ -2,7 +2,7 @@
     <tr><th><h3>Aggregation Functions</h3></th></tr>
     <tr><td><a href=#avg>AVERAGE | AVERAGEA | AVERAGEX</a></td><</tr>
     <tr><td><a href=#count>COUNT | COUNTA | COUNTX | COUNTROWS | COUNTBLANK</a></td><</tr>
-    <tr><td><a href=#distinct>DISTINCTCOUNT</a></td><</tr>    
+    <tr><td><a href=#distinct>DISTINCTCOUNT</a></td></tr>    
 </table>
 
 
