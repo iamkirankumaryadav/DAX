@@ -11,3 +11,5 @@
   <tr><th>7</th><td><a href="#table">TABLE</a></td></tr>
   <tr><th>8</th><td><a href="#var">VAR</a></td></tr>
 </table>
+
+<h3 name=col>COLUMN</h3>
