@@ -81,6 +81,12 @@ Selection of the accurate data type helps to reduce the `size` of a data model a
         <tr><td>Not equal to</td><td><></td><td>[City] <> "Mumbai"</td></tr>
 </table>
 
+DAX is case `insensitive`, while comparing `dax` & `DAX` are equal.
+
+`=` : Compares two value ( Returns `TRUE` if the value is `BLANK()` or `0` or Empty String `""` )
+
+`==` : `Strictly` Equal to ( Return `TRUE` only if value is actually BLANK() and `FALSE` if the value is `0`, `""` or any other value )
+
 <table>
        <tr><th colspan=2>Logical Operator</th></tr>
        <tr><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td></tr>
