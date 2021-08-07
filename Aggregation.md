@@ -3,6 +3,9 @@
     <tr><td><a href=#avg>AVERAGE | AVERAGEA | AVERAGEX</a></td></tr>
     <tr><td><a href=#count>COUNT | COUNTA | COUNTX | COUNTROWS | COUNTBLANK</a></td></tr>
     <tr><td><a href=#distinct>DISTINCTCOUNT</a></td></tr>    
+    <tr><td><a href=#sum>SUM | SUMX</a></td></tr>  
+    <tr><td><a href=#max>MAX | MAXX</a></td></tr> 
+    <tr><td><a href=#min>MIN | MINX</a></td></tr> 
 </table>
 
 
@@ -136,3 +139,94 @@ CALCULATE (
 
 - Returns a single column table of `Unique` Values.
 - Similar to `DISTINCT` but also have additional `Blank` rows for the values which is not found.
+- `SUM` accepts only one column, does not support `Expression`
+
+<h3 name=sum>SUM</h3>
+
+- Add all the numbers in the column.
+- `SUM` function internally executes `SUMX`, without any performance difference.
+
+```DAX
+SUM ( Table[Column] )
+```
+
+What actually happens internally
+
+```DAX
+SUMX (
+    Table,
+    Table[Column]
+)    
+```
+
+### SUMX
+
+- Returns the sum of an expression evaluated for each row in a table.
+- `SUMX` supports `Expression`
+
+```DAX
+SUMX (
+    Table,
+    Table[Column1] * Table [Column2] // Accepts more than one column and expressions.
+)    
+```
+
+<h3 name=max>MAX</h3>
+
+- Returns the `Largest` value in the column, or larger value between two `Scalar` expression.
+- Strings are compared according to Alphabetical order.
+- MAX ( `Date` ) returns the latest date.
+- Ignore `Boolean` value.
+
+```DAX
+MAX ( Table[Column] )
+```
+
+```DAX
+MAX ( Expression1, Expression2 )
+```
+
+```DAX
+MAXX (
+    Table,
+    Table[Column]
+)    
+```
+
+### MAXA
+
+- `MAXA` operates with `Boolean` data type, it consider `TRUE` as `1` and `FALSE` as `0`
+
+### MAXX
+
+- Returns the `Largest` value that results from evaluating an expression for each row of a table.
+
+<h3 name=min>MIN</h3>
+
+- Returns the `Smallest` value in the column, or larger value between two `Scalar` expression.
+- Strings are compared according to Alphabetical order.
+- MIN ( `Date` ) returns the oldest date.
+- Ignore `Boolean` value.
+
+```DAX
+MIN ( Table[Column] )
+```
+
+```DAX
+MIN ( Expression1, Expression2 )
+```
+
+```DAX
+MINX (
+    Table,
+    Table[Column]
+)    
+```
+
+### MINA
+
+- `MINA` operates with `Boolean` data type, it consider `TRUE` as `1` and `FALSE` as `0`
+
+### MAXX
+
+- Returns the `Smallest` value that results from evaluating an expression for each row of a table.
