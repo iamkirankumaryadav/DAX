@@ -50,10 +50,18 @@ Selection of the accurate data type helps to reduce the `size` of a data model a
 2. `Decimal` Number ( floating point number )
 3. `Boolen` ( TRUE / FALSE )
 4. `Text` ( String )
-5. `Currency` ( money )
-6. `Date` ( DateTime )
-7. `String`
+5. `Currency` ( Fixed Decimal Number )
+6. `DateTime`
+7. `Date`
+8. `Time`
+9. `String` ( Unicode String )
+10. `Variant` ( Used for expressions that returns different data type )
 
+`Variant` data type is only used for `Measure` and in general `DAX` expressions.
+
+```DAX
+IF ( [Age] >= 18, 1, "Not Allowed" ) // Variant 
+```
 <h3 name=operators>Operators in DAX</h3>
 
 <table>        
