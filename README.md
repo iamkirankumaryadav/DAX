@@ -85,9 +85,9 @@ Selection of the accurate data type helps to reduce the `size` of a data model a
        <tr><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td></tr>
 </table>
 
-`AND` ( A, B ) or A `&&` B
+`AND` ( A, B ) or A `&&` B ( Return `TRUE` only if both are `TRUE` and `FALSE` if any one is `FALSE` )
 
-`OR` ( A, B ) or A `||` B
+`OR` ( A, B ) or A `||` B ( Return `TRUE` if any one is `TRUE` and `FALSE` only if both are `FALSE` )
 
 ### DAX type handling
 
