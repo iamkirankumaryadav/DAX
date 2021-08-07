@@ -76,12 +76,12 @@ Any argumnet passed as `string` is automatically converted into a `number`
 <table>
         <tr><th colspan=3>Comparison Operator</th></tr>
         <tr><td>Equal to</td><td>=</td><td>[City] = 'Mumbai'</td></tr>
-	<tr><td>Strictly Equal to</td><td>==</td><td>[Price] == BLANK()</td></tr>
+	<tr><td>Strictly equal to</td><td>==</td><td>[Price] == BLANK()</td></tr>
+	<tr><td>Not equal to</td><td><></td><td>[City] <> "Mumbai"</td></tr>
         <tr><td>Greater than</td><td>></td><td>[Age] > 18</td></tr>
         <tr><td>Less than</td><td><</td><td>[Age] < 18</td></tr>
         <tr><td>Greater than or Equal to</td><td>>=</td><td>[Age] >= 18</td></tr>
-        <tr><td>Less than or Equal to</td><td><=</td><td>[Age] <= 18</td></tr>
-        <tr><td>Not equal to</td><td><></td><td>[City] <> "Mumbai"</td></tr>
+        <tr><td>Less than or Equal to</td><td><=</td><td>[Age] <= 18</td></tr>      
 </table>
 
 DAX is case `insensitive`, while comparing `dax` & `DAX` are equal.
