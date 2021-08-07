@@ -2,7 +2,7 @@
 
 <table>
   <tr colspan=2><th>Index</th><th>Statements</th></tr>
-  <tr><th>1</th><td><a href="#col">COLUMN</a></td></tr>
+  <tr><th>1</th><td><a href=#col>COLUMN</a></td></tr>
   <tr><th>2</th><td><a href="#def">DEFINE</a></td></tr>
   <tr><th>3</th><td><a href="#eval">EVALUATE</a></td></tr>
   <tr><th>4</th><td><a href="#measure">MEASURE</a></td></tr>
