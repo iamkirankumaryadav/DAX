@@ -65,8 +65,7 @@ Selection of the accurate data type helps to reduce the `size` of a data model a
         <tr><td>Exponent</td><td>^</td></tr>
 </table>
 
-`+` : Sums two numbers, Any argument passed as a string is automatically converted into a number 
-e.g. `"5"` + `"5"` = `10`
+`+` : Adds two numbers, Any argument passed as a string is automatically converted into a number ( e.g. `"5"` + `"5"` = `10` )
 
 <table>
         <tr><th colspan=3>Comparison Operator</th></tr>
