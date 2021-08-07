@@ -1,4 +1,4 @@
-<table>
+<table align=center>
     <tr><th><h3>Aggregation Functions</h3></th></tr>
 </table>
 
