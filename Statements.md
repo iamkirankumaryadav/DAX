@@ -14,7 +14,9 @@ The results ( defined value or evaluated expressions ) of `VAR` statement is ret
 
 ```DAX
 VAR Pi = 3.14                                                         // Defined 
+
 VAR AreaOfCircle = SUMX ( Math, Pi * Math[Radius] * Math[Radius] )    // Expression
+
 RETURN AreaOfCircle
 ```
 
