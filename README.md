@@ -67,6 +67,10 @@ Selection of the accurate data type helps to reduce the `size` of a data model a
 
 `+` : Adds two numbers, Any argument passed as a string is automatically converted into a number ( e.g. `"5"` + `"5"` = `10` )
 
+`/` : Divides Numerator with Denominator. ( Return `Error` if Denominator is `0` )
+
+`/` and `DIVIDE` function is different ( `DIVIDE` does not return error if Denominator is `0` )
+
 <table>
         <tr><th colspan=3>Comparison Operator</th></tr>
         <tr><td>Equal to</td><td>=</td><td>[City] = 'Mumbai'</td></tr>
