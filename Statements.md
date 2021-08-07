@@ -10,7 +10,13 @@
 
 The `VAR` keyword introduces variables in an expression.
 
-The results of the expressions defined or evaluated by `VAR` statement is returned by `RETURN` statement.
+The results ( defined value or evaluated expressions ) of `VAR` statement is returned by `RETURN` statement.
+
+```DAX
+VAR Pi = 3.14                                                         // Defined 
+VAR AreaOfCircle = SUMX ( Math, Pi * Math[Radius] * Math[Radius] )    // Expression
+RETURN AreaOfCircle
+```
 
 <h3 name=return>RETURN</h3>
 
