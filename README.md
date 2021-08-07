@@ -78,8 +78,7 @@ Selection of the accurate data type helps to reduce the `size` of a data model a
 </table>
 
 <table>
-       <tr><th colspan=2>Text + Logical Operator</th></tr>
-       <tr><td>&</td><td>[City] & " " & [State] ( Concatenate )</td></tr>
+       <tr><th colspan=2>Logical Operator</th></tr>
        <tr><td>&&</td><td>[State] = "MH" && [Country] = "IND"</td></tr>
        <tr><td>||</td><td>[State] = "MH" || [Country] = "IND"</td></tr>
        <tr><td>IN</td><td>[Region] IN {"AMS","APJ","EMEA"}</td></tr>
@@ -88,6 +87,14 @@ Selection of the accurate data type helps to reduce the `size` of a data model a
 `AND` ( A, B ) or A `&&` B ( Return `TRUE` only if both are `TRUE` and `FALSE` if any one is `FALSE` )
 
 `OR` ( A, B ) or A `||` B ( Return `TRUE` if any one is `TRUE` and `FALSE` only if both are `FALSE` )
+
+<table>
+       <tr><th colspan=2>Text Operator</th></tr>
+       <tr><td>&</td><td>[City] & " " & [State] ( Concatenate )</td></tr>
+</table>
+
+`&` : Concatenates two Strings ( "Hello" `&` " " `&` "World" : Hello World )
+
 
 ### DAX type handling
 
