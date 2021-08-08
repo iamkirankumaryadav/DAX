@@ -6,6 +6,8 @@ Filter `Tables` or filter results of `Measures`
 
 `Filters` are `Tables` ( Boolean expressions are shortcut for table expressions )
 
+Table expands only from `Many` to `One` side.
+
 ```DAX
 CALCULATE (
     SUM ( Sale[Amount] ),     
