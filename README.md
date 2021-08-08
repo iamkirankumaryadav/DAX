@@ -245,7 +245,8 @@ RETURN Name
 #### 2. Filter Context  
 
 - Applying `Filters` on set of values of `Columns` or `Tables` using `DAX` calculations.
-- `Filter Context` applies on the top of `Row Context` and `Query Context` 
+- `Filter Context` applies on the top of `Row Context` and `Query Context`
+- Move from `One` side to `Many` side. 
 
 1. `Rows` or `Columns`
 2. By `Slicer`
