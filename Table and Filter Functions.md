@@ -9,11 +9,11 @@ Filter `Tables` or filter results of `Measures`
 ```DAX
 CALCULATE (
     SUM ( Sale[Amount] ),     
-    Sale[Amount] > 100        // Filter
+    Sale[Amount] > 100        // Filter ( Boolean table expression )
 )    
 ```
 
-Is equivalent to :
+Is equivalent to : ( What happens internally )
 
 ```DAX
 CALCULATE (
