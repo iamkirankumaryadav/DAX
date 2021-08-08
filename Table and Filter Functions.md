@@ -8,7 +8,7 @@ Filter `Tables` or filter results of `Measures`
 
 Table expands only from `Many` to `One` side.
 
-It is always better to apply `FILTER` on single column rather than applying on entire Table.
+Always apply `FILTER` on single column rather than applying on entire Table ( Best Practice )
 
 ```DAX
 CALCULATE (
