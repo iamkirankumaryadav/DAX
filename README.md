@@ -247,6 +247,7 @@ RETURN Name
 - Applying `Filters` on set of values of `Columns` or `Tables` using `DAX` calculations.
 - `Filter Context` applies on the top of `Row Context` and `Query Context`
 - Move from `One` side to `Many` side. 
+- e.g. Filter on category will automatically filter the sub categories and further it will filter the products.
 
 1. `Rows` or `Columns`
 2. By `Slicer`
