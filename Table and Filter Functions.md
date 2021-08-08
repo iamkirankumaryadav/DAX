@@ -4,6 +4,8 @@
 
 Filter `Tables` or filter results of `Measures`
 
+`Filters` are `Tables` ( Boolean expressions are shortcut for table expressions )
+
 <table>
            <tr><th colspan=2>Filter Data</th></tr>
            <tr><td>ALL</td><td>Returns all the rows in a table, or all the values in a column, <b>ignoring</b> any filters.</td></tr>
