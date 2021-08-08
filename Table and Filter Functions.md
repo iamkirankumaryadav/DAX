@@ -115,6 +115,8 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 
 Useful for `Slicer`, `Page` filter or `Report` filter.
 
+`Slicer` filters column not entire table.
+
 ```
 CALCULATETABLE (
     Product,                // Table Expression
