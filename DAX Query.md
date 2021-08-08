@@ -212,3 +212,22 @@ RETURN
     'Date'[Year] = 2007,
     'Date'[Month Number] = 2   
 ```
+
+### TRETAS
+
+Calculate Last Non Blank Balance of Customers
+
+```DAX
+Last Non Blank Balance Per Customer =
+    CALCULATE (
+        SUM ( Account[Balance] ),
+        TREATAS (
+            ADDCOLUMNS (
+                VALUES ( Account[Name] ),
+                "Last Available Balance", CALCULATE ( MAX ( Account[Date] ) )
+            ),
+            Account[Name],
+            Date[Date]
+        )
+    )      
+```
