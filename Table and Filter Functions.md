@@ -109,13 +109,10 @@ Generate new `Rows`, `Columns` and `Tables` from scratch.
 
 ### CALCULATETABLE
 
-`CALCULATETABLE` : Used to apply filters on existing columns.
-
-`Evaluate` a table expression and `Returns` a table.
-
-Useful for `Slicer`, `Page` filter or `Report` filter.
-
-`Slicer` filters column not entire table.
+- `CALCULATETABLE` : Used to apply filters on existing columns.
+- `Evaluate` a table expression and `Returns` a table.
+- Useful for `Slicer`, `Page` filter or `Report` filter.
+- `Slicer` filters column not entire table.
 
 ```
 CALCULATETABLE (
