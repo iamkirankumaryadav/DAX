@@ -6,6 +6,25 @@ Filter `Tables` or filter results of `Measures`
 
 `Filters` are `Tables` ( Boolean expressions are shortcut for table expressions )
 
+```DAX
+CALCULATE (
+    SUM ( Sale[Amount] ),     
+    Sale[Amount] > 100        // Filter
+)    
+```
+
+Is equivalent to :
+
+```DAX
+CALCULATE (
+    SUM ( Sale[Amount] ),
+    FILTER (
+        ALL ( Sale[Amount] ),
+        Sale[Amount] > 100
+    )    
+)   
+```
+
 <table>
            <tr><th colspan=2>Filter Data</th></tr>
            <tr><td>ALL</td><td>Returns all the rows in a table, or all the values in a column, <b>ignoring</b> any filters.</td></tr>
