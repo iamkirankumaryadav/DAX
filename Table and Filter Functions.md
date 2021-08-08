@@ -8,6 +8,8 @@ Filter `Tables` or filter results of `Measures`
 
 Table expands only from `Many` to `One` side.
 
+It is always better to apply `FILTER` on single column rather than applying on entire Table.
+
 ```DAX
 CALCULATE (
     SUM ( Sale[Amount] ),     
