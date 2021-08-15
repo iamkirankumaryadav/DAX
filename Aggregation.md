@@ -1,5 +1,5 @@
 <table align=center>
-    <tr><th><h3>Aggregation Functions</h3></th></tr>
+    <tr><th><h3>Aggregation & Iterator Functions</h3></th></tr>
     <tr><td><a href=#avg>AVERAGE | AVERAGEA | AVERAGEX</a></td></tr>
     <tr><td><a href=#count>COUNT | COUNTA | COUNTX | COUNTROWS | COUNTBLANK</a></td></tr>
     <tr><td><a href=#distinct>DISTINCTCOUNT</a></td></tr>    
@@ -8,7 +8,8 @@
     <tr><td><a href=#min>MIN | MINX</a></td></tr> 
 </table>
 
-
+You can compute the `Aggregate`of one column, but cannot compute aggregate of an `expression`
+ 
 `Aggregation` function returns a `Scalar` value to a column or an expression evaluated by iterating a table expression.
 
 ### AVERAGE
