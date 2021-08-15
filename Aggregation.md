@@ -9,6 +9,8 @@
 </table>
 
 You can compute the `Aggregate`of one column, but cannot compute aggregate of an `expression`
+
+`Iterator` functions can compute aggregate of `expression`
  
 `Aggregation` function returns a `Scalar` value to a column or an expression evaluated by iterating a table expression.
 
