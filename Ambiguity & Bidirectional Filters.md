@@ -9,3 +9,4 @@
 - There is a set of rules with bidirectional filters.
 - `Correct` model : Only Unidirectional relationships ( No bidirectional relationship anywhere )
 - Model will not complain about the `Ambiguity` but the calculations may give wrong results.
+- Try to avoid `Ambiguity` as much as you can ( Try only use One to Many relationships in the model )
