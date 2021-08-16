@@ -7,4 +7,5 @@
 - If you are traversing from source to destination through more than one path & in both directions then it means `Ambiguity`
 - Engine does not know exactly which path it should follow in order to move a filter from one table to another table.
 - There is a set of rules with bidirectional filters.
-- `Correct` model : Only Unidirectional relationships (No bidirectional relationship anywhere)
+- `Correct` model : Only Unidirectional relationships ( No bidirectional relationship anywhere )
+- Model will not complain about the `Ambiguity` but the calculations may give wrong results.
