@@ -10,3 +10,5 @@
 - `Correct` model : Only Unidirectional relationships ( No bidirectional relationship anywhere )
 - Model will not complain about the `Ambiguity` but the calculations may give wrong results.
 - Try to avoid `Ambiguity` as much as you can ( Try only use One to Many relationships in the model )
+- Better way is to only enable it on demand by using `CALCULATE` and then `CROSSFILTER` function.
+- It provides more flexibility in activating bidirectional cross filter only when it is strictly needed.
