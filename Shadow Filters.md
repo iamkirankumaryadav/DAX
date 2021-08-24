@@ -9,7 +9,14 @@ Shadow filter context contains all the rows which are visible in the table that 
 ```
 AVERAGEX (
     Customer, 
-    CALCULATE ( SUM ( Sales[Quantity] ) )        
+    CALCULATE ( SUM ( Sales[Quantity] ) )    
+)    
 ```
 
 Here `AVERAGEX` creates a shadow filter on the entire Customer table.
+
+Shadow filter does not do anything.
+
+The only function that can enable shadow filter is `ALLSELECTED`
+
+When `ALLSELECTED` is called from inside an iteration, it restores the shadow filter.
