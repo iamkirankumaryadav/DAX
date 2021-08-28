@@ -12,10 +12,44 @@ Net `Price` : Value at which a `Product` or `Service` is sold after all taxes an
 
 ### Basic Measures
 
+Any Model contains cetain basic measures.
+
 ```
 Sales Amount = SUMX ( Sales, Sales[Net Price] * Sales[Quantity] )
 
 Total Cost = SUMX ( Sales, Sales[Unit Cost] * Sales[Quantity] )
 
 Margin = [Sales Amount] - [Total Cost]
+
+Sales Quantity = SUM ( Sales[Quantity] )
+```
+
+### Pre Aggregated Measures
+
+YTD, MTD, SPLY
+
+```
+YTD Sales Amount = 
+CALCULATE (
+    [Sales Amount],
+    DATESYTD ( Date[Date] )
+)
+
+YTD Total Cost =
+CALCULATE (
+    [Total Cost],
+    DATESYTD ( Date[Date] )
+)    
+
+YTD Margin = 
+CALCULATE (
+    [Margin],
+    DATESYTD ( Date[Date] )
+)  
+
+YTD Sales Quantity = 
+CALCULATE (
+    [Sales Quantity],
+    DATESYTD ( Date[Date] )
+)  
 ```
