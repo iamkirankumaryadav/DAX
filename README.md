@@ -28,6 +28,8 @@ It means, calculations mostly use `functions` to generate the results.
 
 `DAX` is designed for enhancing `Data Modeling`, `Reporting` and `Analytics` capability.
 
+In `Excel` we consider `Cell` Reference but in Power BI reference is given either to `Table` or to `Column`
+
 ```DAX
 SUM (
     FILTER ( 
